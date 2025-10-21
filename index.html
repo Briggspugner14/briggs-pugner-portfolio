@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio - Briggs Pugner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Academic Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Briggs Pugner</h1>
+                <p class="hero-subtitle">Computer Engineering Student & Research Portfolio</p>
+                <p class="hero-description">
+                    Welcome to my academic portfolio showcasing my educational journey, 
+                    research contributions, and achievements in Computer Engineering at the University of Maryland Eastern Shore.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#education" class="btn btn-primary">Explore Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="research-poster" style="display: flex; flex-direction: column; align-items: center; max-width: 900px; margin: 0 auto; position: relative;">
+                    <!-- Top image (SULI Poster) -->
+                    <div style="margin-bottom: 1.5rem;">
+                        <img src="assets/WebsiteImages/SULI_Poster.png" alt="SULI Research Poster" style="width: auto; max-width: 350px; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);">
+                    </div>
+                    <!-- Bottom row with two images -->
+                    <div style="display: flex; gap: 3rem; justify-content: center; align-items: flex-start;">
+                        <img src="assets/WebsiteImages/UMES_Symposium.jpg" alt="UMES Symposium" style="width: auto; max-width: 280px; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);">
+                        <img src="assets/WebsiteImages/NASA_Award.jpg" alt="NASA Award" style="width: auto; max-width: 280px; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Awards Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education & Awards</h2>
+            
+            <!-- Education & Awards Side by Side -->
+            <div class="education-awards-container">
+                <!-- Education Section -->
+                <div class="education-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Academic Background
+                    </h3>
+                    <div class="education-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Bachelor of Science in Computer Engineering</h3>
+                                <h4>University of Maryland Eastern Shore</h4>
+                                <p class="timeline-date">2022 - 2025 (Expected)</p>
+                                <p class="timeline-description">
+                                    Junior Computer Engineering student with focus on hardware design, embedded systems, 
+                                    and computer vision applications. Currently maintaining perfect academic standing.
+                                </p>
+                                <div class="achievements">
+                                    <span class="achievement-tag">GPA: 4.0/4.0</span>
+                                    <span class="achievement-tag">Dean's List (2024-2025)</span>
+                                    <span class="achievement-tag">Richard A. Henson Honors Program (2024-2025)</span>
+                                    <span class="achievement-tag">NASA Outstanding Achievement Award (2025)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Awards Section -->
+                <div class="awards-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-trophy"></i>
+                        Recognition & Honors
+                    </h3>
+                    <div class="awards-grid">
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="award-content">
+                                <h3>Outstanding Achievement Award</h3>
+                                <p class="award-organization">NASA</p>
+                                <p class="award-date">2025</p>
+                                <p class="award-description">
+                                    Received NASA Outstanding Achievement Award in recognition for developing an Automated Launcher Control System for a sounding rocket launcher, integrating advanced data communication protocols, fiber-optic control interfaces, and safety blockout angle calculations in polar coordinates to ensure secure and fault-tolerant launch operations.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="award-content">
+                                <h3>Dean's List</h3>
+                                <p class="award-organization">University of Maryland Eastern Shore</p>
+                                <p class="award-date">2024-2025</p>
+                                <p class="award-description">
+                                    Consistent academic excellence maintaining a perfect 4.0 GPA throughout undergraduate studies.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="award-content">
+                                <h3>Richard A. Henson Honors Program</h3>
+                                <p class="award-organization">University of Maryland Eastern Shore</p>
+                                <p class="award-date">2024-2025</p>
+                                <p class="award-description">
+                                    Selected for the prestigious honors program recognizing academic excellence and leadership potential.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Research Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/WebsiteImages/RadiativeCooling.jpg" alt="Radiative Cooling Project" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Radiative Cooling Project</h3>
+                        <p class="project-role">Undergraduate Researcher</p>
+                        <p class="project-duration">2024 - 2025</p>
+                        <p class="project-description">
+                            Developing innovative radiative cooling technologies for energy-efficient applications. 
+                            Working on materials science and thermal management systems.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Thermal Engineering</span>
+                            <span class="tech-tag">Materials Science</span>
+                            <span class="tech-tag">Energy Systems</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="radiative-cooling-project.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/WebsiteImages/cell_impedance.png" alt="Cell Impedance Project" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Cell Impedance Project</h3>
+                        <p class="project-role">Undergraduate Researcher</p>
+                        <p class="project-duration">2025</p>
+                        <p class="project-description">
+                            Investigating electrical impedance characteristics of biological cells for 
+                            medical diagnostics and research applications.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Electronics</span>
+                            <span class="tech-tag">Biomedical Engineering</span>
+                            <span class="tech-tag">Signal Processing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="cell-impedance-project.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/WebsiteImages/MLP_Blk_Diagram.png" alt="Mirror Langmuir Probe Project" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Mirror Langmuir Probe for MUSE Compact Stellarator</h3>
+                        <p class="project-role">Research Intern</p>
+                        <p class="project-duration">Summer 2025</p>
+                        <p class="project-description">
+                            Developing advanced plasma diagnostic tools for the MUSE compact stellarator 
+                            fusion research project in collaboration with NASA.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Plasma Physics</span>
+                            <span class="tech-tag">Fusion Technology</span>
+                            <span class="tech-tag">Instrumentation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="muse-stellarator-project.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/WebsiteImages/SickleDetectionCover.png" alt="Sickle Cell Detection Project" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Training of Neural Network based on the Deformation of Sickle Cells using computer vision</h3>
+                        <p class="project-role">Lead Developer</p>
+                        <p class="project-duration">Fall 2025</p>
+                        <p class="project-description">
+                            Developing computer vision algorithms for automated detection and analysis 
+                            of sickle cell disease in medical imaging.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">YOLO</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="sickle-cell-detection-project.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/WebsiteImages/Launcher.jpg" alt="Automated Launcher Control System" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Automated Launcher Control System</h3>
+                        <p class="project-role">Lead Developer</p>
+                        <p class="project-duration">Spring 2025</p>
+                        <p class="project-description">
+                            Advanced automated control system for NASA launch vehicle operations, 
+                            featuring real-time monitoring and safety protocols.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Embedded Systems</span>
+                            <span class="tech-tag">Serial Communication</span>
+                            <span class="tech-tag">Data Decoding</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="automated-launcher-control-system.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/WebsiteImages/3-axis-cover.png" alt="Moments of Inertia Project" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Moments of Inertia in 3-Axis for Spaceflight Objects</h3>
+                        <p class="project-role">Research Assistant</p>
+                        <p class="project-duration">Fall 2025</p>
+                        <p class="project-description">
+                            Advanced rotational dynamics analysis for aerospace applications, developing comprehensive mathematical 
+                            models and computational tools for spacecraft stability and control systems.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">Simulink</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Control Systems</span>
+                            <span class="tech-tag">Aerospace Engineering</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="moments-of-inertia-project.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VHDL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Verilog</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Engineering Software</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">SolidWorks</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Fusion 360</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">KiCad</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">LTspice</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NI LabVIEW</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Languages</h3>
+                    <div class="languages-grid">
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <span class="language-level">Native</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Spanish</span>
+                            <span class="language-level">Fluent</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">French</span>
+                            <span class="language-level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always interested in discussing research opportunities, collaborations, and academic discussions.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Bjpugner@umes.edu</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>University of Maryland Eastern Shore, Maryland, United States</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>443-373-9424</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/briggs-pugner/" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://briggspugner.weebly.com/" class="social-link">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-google-scholar"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Academic Portfolio</h3>
+                    <p>Showcasing academic achievements and research contributions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#education">Education & Awards</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/briggs-pugner/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://briggspugner.weebly.com/"><i class="fas fa-globe"></i></a>
+                        <a href="#"><i class="fab fa-google-scholar"></i></a>
+                        <a href="#"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Briggs Pugner. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

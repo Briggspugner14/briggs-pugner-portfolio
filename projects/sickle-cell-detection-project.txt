@@ -1,0 +1,79 @@
+# Training of Neural Network based on the Deformation of Sickle Cells using Computer Vision
+
+## Project Overview
+**Title:** Training of Neural Network based on the Deformation of Sickle Cells using Computer Vision
+**Role:** Lead Developer
+**Duration:** Fall 2025
+**Institution:** University of Maryland Eastern Shore
+**Status:** [Add status - e.g., Completed, Ongoing, Planning]
+
+## Description
+Developing computer vision algorithms for automated detection and analysis of sickle cell disease in medical imaging.
+
+## Technologies Used
+- Computer Vision
+- Machine Learning
+- YOLO (You Only Look Once)
+- [Add additional technologies as needed - e.g., Python, OpenCV, TensorFlow, PyTorch]
+
+## Project Images
+**Main Image:** ../assets/WebsiteImages/SickleDetectionCover.png
+**Additional Images:**
+- [Add image path here - e.g., ../assets/WebsiteImages/sickle-cell-microscopy.jpg]
+- [Add image path here - e.g., ../assets/WebsiteImages/neural-network-architecture.png]
+- [Add image path here - e.g., ../assets/WebsiteImages/detection-results-comparison.png]
+
+## Detailed Content
+
+### Overview
+[Add detailed project overview about using computer vision and machine learning for sickle cell detection, including the medical significance and technical challenges]
+
+### Objectives
+- [Add objective 1 - e.g., Develop accurate automated detection of sickle cell deformation]
+- [Add objective 2 - e.g., Train neural network for real-time analysis]
+- [Add objective 3 - e.g., Improve diagnostic accuracy and speed]
+- [Add additional objectives as needed]
+
+### Technical Approach
+[Add detailed technical approach including:
+- Computer vision preprocessing techniques
+- Neural network architecture and training methodology
+- YOLO implementation for object detection
+- Data augmentation and validation strategies
+- Performance evaluation metrics]
+
+### Key Contributions
+- [Add your specific contributions to this project]
+- [Add additional contributions such as:
+  - Algorithm development and optimization
+  - Dataset preparation and annotation
+  - Model training and validation
+  - Performance analysis and improvement]
+
+### Results
+[Add project results, findings, and outcomes including:
+- Detection accuracy achieved
+- Performance metrics and benchmarks
+- Clinical validation results
+- Comparison with existing methods]
+
+### Future Work
+[Add future research directions and next steps for:
+- Model improvement and optimization
+- Clinical deployment considerations
+- Integration with medical imaging systems
+- Expansion to other blood cell disorders]
+
+## Additional Information
+**Link to HTML page:** projects/sickle-cell-detection-project.html
+**Medical Application:** Automated sickle cell disease detection
+
+## Notes for Content Management
+- Add specific performance metrics and accuracy results
+- Include detailed technical specifications of the neural network
+- Add any publications or presentations related to this project
+- Update status and timeline as project progresses
+- Add team member information if applicable
+- Add any relevant research papers or medical references
+- Include information about dataset size and characteristics
+- Add information about clinical validation or testing

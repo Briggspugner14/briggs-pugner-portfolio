@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Launcher Control System - Briggs Pugner</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        .project-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .project-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .project-section {
+            margin-bottom: 3rem;
+        }
+        .project-section h2 {
+            color: #2563eb;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 0.5rem;
+        }
+        .project-section h3 {
+            color: #1f2937;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .meta-item {
+            text-align: center;
+        }
+        .meta-item h4 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #1d4ed8;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .tech-tag {
+            background: #e0e7ff;
+            color: #2563eb;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .project-image {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            background: #f3f4f6;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem auto;
+            color: #6b7280;
+            font-size: 1.1rem;
+        }
+        .nasa-badge {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .system-architecture {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+        .architecture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .architecture-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .architecture-item h4 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-hero">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            <h1>Automated Launcher Control System</h1>
+            <p>NASA Project - Advanced Launch Vehicle Automation</p>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <div class="nasa-badge">
+            <h3><i class="fas fa-rocket"></i> NASA Project</h3>
+            <p>Advanced automated control system for launch vehicle operations</p>
+        </div>
+
+        <div class="project-meta">
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h4>Duration</h4>
+                    <p>Spring 2025</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Role</h4>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Organization</h4>
+                    <p>NASA</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Status</h4>
+                    <p>Completed</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>The Automated Launcher Control System is a sophisticated control and monitoring system designed for NASA's launch vehicle operations. This project involved developing a comprehensive automation solution that enhances safety, reliability, and efficiency in launch operations through advanced control algorithms, real-time monitoring, and automated decision-making capabilities.</p>
+            
+            <div class="project-image" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                <img src="../assets/WebsiteImages/launcher_control.jpg" alt="Automated Launcher Control System" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;">
+                <img src="../assets/WebsiteImages/ShippingContainer.jpg" alt="Programming in Shipping Container" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;">
+                <img src="../assets/WebsiteImages/NASA_Award.jpg" alt="NASA Award" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;">
+            </div>
+            
+            <div class="project-section">
+                <h2>LCS-Wiring System</h2>
+                <div class="project-image">
+                    <img src="../assets/WebsiteImages/LCS_Wiring.png" alt="LCS Wiring System" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
+                <p>The LCS-Wiring system represents the comprehensive electrical infrastructure connecting all components of the Automated Launcher Control System. This critical wiring network ensures reliable communication, power distribution, and safety interlock functionality throughout the launch sequence.</p>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>System Architecture</h2>
+            <div class="system-architecture">
+                <h3>Core Components</h3>
+                <div class="architecture-grid">
+                    <div class="architecture-item">
+                        <h4><i class="fas fa-microchip"></i> Launcher Control System (LCS)</h4>
+                        <p>Central processing unit managing all system operations, launch sequence control, and decision-making processes with integrated safety protocols.</p>
+                    </div>
+                    <div class="architecture-item">
+                        <h4><i class="fas fa-plug"></i> LCS-Wiring System</h4>
+                        <p>Comprehensive electrical wiring infrastructure connecting all system components with redundant pathways and safety interlocks.</p>
+                    </div>
+                    <div class="architecture-item">
+                        <h4><i class="fas fa-satellite-dish"></i> Communication Module</h4>
+                        <p>Real-time data transmission and reception for ground control, telemetry, and command execution with encrypted protocols.</p>
+                    </div>
+                    <div class="architecture-item">
+                        <h4><i class="fas fa-shield-alt"></i> Safety Systems</h4>
+                        <p>Multi-layered safety mechanisms including automatic abort capabilities, emergency shutdown procedures, and redundant monitoring systems.</p>
+                    </div>
+                    <div class="architecture-item">
+                        <h4><i class="fas fa-chart-line"></i> Monitoring Interface</h4>
+                        <p>Real-time system status monitoring, launch sequence visualization, and operator interface with predictive analytics.</p>
+                    </div>
+                    <div class="architecture-item">
+                        <h4><i class="fas fa-cogs"></i> Launch Control Integration</h4>
+                        <p>Automated launch sequence management with precision timing, sensor integration, and environmental condition monitoring.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Research Objectives</h2>
+            <ul>
+                <li>Develop automated control algorithms for launch vehicle operations</li>
+                <li>Design and implement comprehensive LCS-Wiring infrastructure</li>
+                <li>Create integrated launcher control system with precision timing</li>
+                <li>Implement real-time monitoring and telemetry systems</li>
+                <li>Design robust safety mechanisms and fail-safe protocols</li>
+                <li>Develop serial communication protocols and data decoding techniques</li>
+                <li>Create user-friendly operator interfaces and control systems</li>
+                <li>Optimize system performance and reliability</li>
+                <li>Ensure compliance with NASA safety and operational standards</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Technical Approach</h2>
+            <h3>Launcher Control System (LCS) Development</h3>
+            <p>Development of comprehensive launcher control system architecture integrating automated launch sequence management, precision timing control, and real-time decision-making capabilities for NASA launch operations.</p>
+            
+            <h3>LCS-Wiring Infrastructure</h3>
+            <p>Design and implementation of robust electrical wiring system connecting all launch vehicle components with redundant pathways, safety interlocks, and fault-tolerant communication networks ensuring reliable system operation under extreme conditions.</p>
+            
+            <h3>Control Systems Engineering</h3>
+            <p>Development of advanced control algorithms using modern control theory, including PID controllers, state-space methods, and adaptive control techniques for precise launch vehicle guidance and control.</p>
+            
+            <h3>Serial Communication & Data Decoding</h3>
+            <p>Implementation of sophisticated serial communication protocols and data decoding techniques for real-time data exchange between system components, ground control, and telemetry systems with error detection and correction capabilities.</p>
+            
+            <h3>Real-Time Systems</h3>
+            <p>Implementation of hard real-time systems capable of meeting strict timing requirements for critical launch operations, ensuring system responsiveness and reliability under high-stress conditions.</p>
+            
+            <h3>Safety-Critical Design</h3>
+            <p>Design and implementation of redundant safety systems with multiple layers of protection, including automatic abort capabilities, emergency response protocols, and fail-safe mechanisms.</p>
+            
+            <h3>Data Acquisition & Processing</h3>
+            <p>High-speed data acquisition systems for monitoring critical parameters including pressure, temperature, vibration, position sensors, and environmental conditions throughout the launch sequence.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Technologies & Tools</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">Embedded Systems</span>
+                <span class="tech-tag">Real-Time Control</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Control Systems</span>
+                <span class="tech-tag">Serial Communication</span>
+                <span class="tech-tag">Data Decoding Techniques</span>
+                <span class="tech-tag">LCS-Wiring</span>
+                <span class="tech-tag">Launcher Control</span>
+                <span class="tech-tag">Safety Systems</span>
+                <span class="tech-tag">Data Acquisition</span>
+                <span class="tech-tag">Communication Protocols</span>
+                <span class="tech-tag">Electrical Systems</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Contributions</h2>
+            <ul>
+                <li>Designed and implemented the core Launcher Control System (LCS) architecture</li>
+                <li>Developed comprehensive LCS-Wiring infrastructure with redundant pathways and safety interlocks</li>
+                <li>Created integrated launcher control system with precision timing and automated sequence management</li>
+                <li>Implemented advanced serial communication protocols and data decoding techniques</li>
+                <li>Developed automated control algorithms for launch operations with real-time decision-making</li>
+                <li>Created real-time monitoring and telemetry systems with predictive analytics</li>
+                <li>Implemented comprehensive safety mechanisms and protocols with automatic abort capabilities</li>
+                <li>Designed user interfaces for ground control operations with launch sequence visualization</li>
+                <li>Conducted extensive testing and validation procedures including hardware-in-the-loop testing</li>
+                <li>Documented system specifications and operational procedures for NASA compliance</li>
+                <li>Collaborated with NASA engineers on system integration and deployment</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>System Features</h2>
+            <h3>Launcher Control System (LCS)</h3>
+            <p>Comprehensive launcher control system with automated launch sequence management, precision timing control, and real-time decision-making capabilities for NASA launch operations.</p>
+            
+            <h3>LCS-Wiring Infrastructure</h3>
+            <p>Robust electrical wiring system with redundant pathways, safety interlocks, and fault-tolerant communication networks ensuring reliable operation under extreme launch conditions.</p>
+            
+            <h3>Automated Launch Sequence</h3>
+            <p>Fully automated launch sequence with minimal human intervention, including pre-launch checks, countdown procedures, launch execution, and post-launch monitoring.</p>
+            
+            <h3>Serial Communication & Data Decoding</h3>
+            <p>Advanced serial communication protocols with sophisticated data decoding techniques for real-time data exchange between system components and ground control.</p>
+            
+            <h3>Real-Time Monitoring</h3>
+            <p>Continuous monitoring of all critical systems with real-time data display, predictive analytics, and automatic alert systems for any anomalies.</p>
+            
+            <h3>Safety Protocols</h3>
+            <p>Multiple layers of safety including automatic abort capabilities, emergency shutdown procedures, redundant monitoring systems, and fail-safe mechanisms.</p>
+            
+            <h3>Data Logging & Analysis</h3>
+            <p>Comprehensive data logging for post-launch analysis and system optimization, with advanced analytics capabilities and performance metrics.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Results & Impact</h2>
+            <p>This project significantly enhanced NASA's launch capabilities by providing:</p>
+            <ul>
+                <li>Improved launch reliability and safety</li>
+                <li>Reduced human error through automation</li>
+                <li>Enhanced operational efficiency</li>
+                <li>Advanced monitoring and diagnostic capabilities</li>
+                <li>Standardized launch procedures</li>
+                <li>Cost reduction through automation</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Testing & Validation</h2>
+            <ul>
+                <li>Extensive simulation testing using flight dynamics models</li>
+                <li>Hardware-in-the-loop testing with actual launch vehicle components</li>
+                <li>Safety system validation and emergency procedure testing</li>
+                <li>Performance testing under various environmental conditions</li>
+                <li>Integration testing with existing NASA systems</li>
+                <li>Operator training and system acceptance testing</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Future Applications</h2>
+            <p>The technologies developed in this project have potential applications in:</p>
+            <ul>
+                <li>Commercial space launch operations</li>
+                <li>Military missile systems</li>
+                <li>Unmanned aerial vehicle (UAV) operations</li>
+                <li>Industrial automation systems</li>
+                <li>Autonomous vehicle control systems</li>
+                <li>Robotic systems and automation</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Educational Impact</h2>
+            <p>This project provided invaluable experience in:</p>
+            <ul>
+                <li>Advanced control systems engineering</li>
+                <li>Real-time systems development</li>
+                <li>Safety-critical system design</li>
+                <li>NASA engineering standards and procedures</li>
+                <li>Large-scale system integration</li>
+                <li>Professional engineering practices</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Briggs Pugner</h3>
+                    <p>Computer Engineering Student at UMES</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="index.html#education">Education</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Briggs Pugner. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

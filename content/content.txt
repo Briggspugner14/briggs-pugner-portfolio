@@ -1,0 +1,185 @@
+# Academic Portfolio Content
+
+## Personal Information
+Name: Briggs Pugner
+Title: Computer Engineering Student & Research Portfolio
+Description: Welcome to my academic portfolio showcasing my educational journey, research contributions, and achievements in Computer Engineering at the University of Maryland Eastern Shore.
+Email: Bjpugner@umes.edu
+Phone: 443-373-9424
+Location: University of Maryland Eastern Shore, Maryland, United States
+LinkedIn: https://www.linkedin.com/in/briggs-pugner/
+
+## Education
+Degree: Bachelor of Science in Computer Engineering
+Institution: University of Maryland Eastern Shore
+Duration: 2024 - 2027 (Expected)
+Description: Junior Computer Engineering student with a focus on hardware design, embedded systems, and computer vision applications. Currently maintaining perfect academic standing.
+
+### Achievements
+- GPA: 4.0/4.0
+- Dean's List (2024-2025)
+- Richard A. Henson Honors Program (2024-2025)
+- NASA Outstanding Achievement Award (2025)
+
+## Awards & Recognition
+
+### Award 1
+Title: Outstanding Achievement Award
+Organization: NASA
+Date: 2025
+Icon: rocket
+Description: Received NASA Outstanding Achievement Award in recognition for developing an Automated Launcher Control System for a sounding rocket launcher, integrating advanced data communication protocols, fiber-optic control interfaces, and safety blockout angle calculations in polar coordinates to ensure secure and fault-tolerant launch operations.
+
+### Award 2
+Title: Dean's List
+Organization: University of Maryland Eastern Shore
+Date: 2024-2025
+Icon: graduation-cap
+Description: Consistent academic excellence maintaining a perfect 4.0 GPA throughout undergraduate studies.
+
+### Award 3
+Title: Richard A. Henson Honors Program
+Organization: University of Maryland Eastern Shore
+Date: 2024-2025
+Icon: medal
+Description: Selected for the prestigious honors program recognizing academic excellence and leadership potential.
+
+## Projects
+
+### Project 1
+Title: Radiative Cooling Project
+Role: Undergraduate Researcher
+Duration: 2024 - 2025
+Image: assets/WebsiteImages/RadiativeCooling.jpg
+Description: Developing innovative radiative cooling technologies for energy-efficient applications. Working on materials science and thermal management systems.
+Technologies: Thermal Engineering, Materials Science, Energy Systems
+Link: projects/radiative-cooling-project.html
+Status: Ongoing
+Institution: University of Maryland Eastern Shore
+Subtitle: Innovative Energy-Efficient Cooling Technologies
+
+#### Detailed Content
+Overview: The Radiative Cooling Project focuses on developing innovative cooling technologies that utilize radiative heat transfer to achieve energy-efficient temperature regulation. This research addresses the growing need for sustainable cooling solutions in various applications, including building systems.
+
+Objectives:
+- Develop materials with enhanced radiative cooling properties
+- Investigate the integration of radiative cooling with existing technologies
+- Evaluate energy efficiency improvements and cost-effectiveness
+- Explore applications in buildings and industrial systems
+
+Technical Approach:
+Materials Science: Research focuses on developing and characterizing materials with specific optical properties such as  that enhance radiative cooling. This includes studying the interaction between materials and infrared radiation in the atmospheric window.
+Thermal Analysis: Comprehensive thermal modeling and simulation to understand heat transfer mechanisms and optimize cooling performance under various environmental conditions.
+System Integration: Design and testing of integrated cooling systems that combine radiative cooling with conventional thermal management approaches.
+
+Additional Technologies: Heat Transfer Analysis, Optical Characterization, Thermal Simulation, Environmental Testing
+
+Key Contributions:
+- Conducted literature review on radiative cooling materials and technologies
+- Assisted in experimental setup and data collection for thermal performance testing
+- Contributed to thermal modeling and simulation of cooling systems
+- Analyzed experimental data and helped identify optimization opportunities
+- Collaborated with team members on system design and integration challenges
+
+Results: This research contributes to the development of sustainable cooling technologies that can significantly reduce energy consumption in various applications. The project has potential implications for energy-efficient building cooling systems, electronics thermal management, industrial process cooling, and reduction of greenhouse gas emissions from cooling systems.
+
+Future Work: The project continues to explore advanced materials and system configurations to further improve radiative cooling efficiency and expand potential applications. Future research directions include development of scalable manufacturing processes, integration with smart building systems, long-term performance and durability studies, and economic analysis and market feasibility studies.
+
+### Project 2
+Title: Cell Impedance Project
+Role: Undergraduate Researcher
+Duration: 2025
+Image: assets/WebsiteImages/cell_impedance.png
+Description: Investigating electrical impedance characteristics of biological cells for medical diagnostics and research applications.
+Technologies: Electronics, Biomedical Engineering, Signal Processing
+Link: projects/cell-impedance-project.html
+
+### Project 3
+Title: Mirror Langmuir Probe for MUSE Compact Stellarator
+Role: Research Intern
+Duration: Summer 2025
+Image: assets/WebsiteImages/MLP_Blk_Diagram.png
+Description: Developing advanced plasma diagnostic tools for the MUSE compact stellarator fusion research project in collaboration with NASA.
+Technologies: Plasma Physics, Fusion Technology, Instrumentation
+Link: projects/muse-stellarator-project.html
+
+### Project 4
+Title: Training of Neural Network based on the Deformation of Sickle Cells using computer vision
+Role: Lead Developer
+Duration: Fall 2025
+Image: assets/WebsiteImages/SickleDetectionCover.png
+Description: Developing computer vision algorithms for automated detection and analysis of sickle cell disease in medical imaging.
+Technologies: Computer Vision, Machine Learning, YOLO
+Link: projects/sickle-cell-detection-project.html
+
+### Project 5
+Title: Automated Launcher Control System
+Role: Lead Developer
+Duration: Spring 2025
+Image: assets/WebsiteImages/Launcher.jpg
+Description: Advanced automated control system for NASA launch vehicle operations, featuring real-time monitoring and safety protocols.
+Technologies: Embedded Systems, Serial Communication, Data Decoding
+Link: projects/automated-launcher-control-system.html
+Status: Completed
+Institution: NASA
+Subtitle: Advanced Launch Vehicle Control & Safety Systems
+
+#### Detailed Content
+Overview: The Automated Launcher Control System represents a comprehensive solution for managing NASA sounding rocket launch operations. This system integrates advanced data communication protocols, fiber-optic control interfaces, and sophisticated safety blockout angle calculations in polar coordinates to ensure secure and fault-tolerant launch operations.
+
+Objectives:
+- Develop a robust automated control system for launch vehicle operations
+- Implement real-time monitoring and data acquisition capabilities
+- Integrate advanced safety protocols and fault detection systems
+- Create user-friendly interfaces for launch control personnel
+- Ensure compliance with NASA safety standards and protocols
+
+Technical Approach:
+Embedded Systems: Development of microcontroller-based control systems with real-time processing capabilities for launch sequence management.
+Serial Communication: Implementation of reliable data communication protocols for interfacing with various launch vehicle subsystems.
+Data Decoding: Advanced algorithms for processing and interpreting telemetry data from multiple sources during launch operations.
+Safety Systems: Integration of comprehensive safety protocols, including blockout angle calculations and emergency abort procedures.
+
+Additional Technologies: Fiber-Optic Interfaces, Polar Coordinate Calculations, Real-Time Monitoring, Fault Detection, Safety Protocols, Telemetry Processing
+
+Key Contributions:
+- Designed and implemented the core control system architecture
+- Developed advanced data communication protocols for reliable system integration
+- Created sophisticated safety blockout angle calculation algorithms in polar coordinates
+- Integrated fiber-optic control interfaces for enhanced system reliability
+- Implemented comprehensive fault detection and emergency abort procedures
+- Collaborated with NASA engineers to ensure compliance with safety standards
+
+Results: The system successfully demonstrated enhanced reliability and safety in launch operations, with improved real-time monitoring capabilities and reduced human error potential. The project received recognition through the NASA Outstanding Achievement Award for exceptional contributions to launch vehicle control systems.
+
+Future Work: Future enhancements include integration with advanced AI-based decision support systems, expanded telemetry capabilities, and development of predictive maintenance algorithms for improved system reliability and reduced operational costs.
+
+### Project 6
+Title: Moments of Inertia in 3-Axis for Spaceflight Objects
+Role: Research Assistant
+Duration: Fall 2025
+Image: assets/WebsiteImages/3-axis-cover.png
+Description: Advanced rotational dynamics analysis for aerospace applications, developing comprehensive mathematical models and computational tools for spacecraft stability and control systems.
+Technologies: MATLAB, Simulink, Python, Control Systems, Aerospace Engineering
+Link: projects/moments-of-inertia-project.html
+
+## Skills
+
+### Programming Languages
+Python: 90
+C++: 85
+VHDL: 80
+Verilog: 80
+
+### Engineering Software
+SolidWorks: 85
+Fusion 360: 80
+KiCad: 85
+LTspice: 80
+NI LabVIEW: 75
+Linux: 85
+
+### Languages
+English: Native
+Spanish: Fluent
+French: Intermediate

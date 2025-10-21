@@ -1,0 +1,85 @@
+# Automated Launcher Control System
+
+## Project Overview
+**Title:** Automated Launcher Control System
+**Role:** Lead Developer
+**Duration:** Spring 2025
+**Institution:** NASA
+**Status:** Completed
+**Subtitle:** Advanced Launch Vehicle Control & Safety Systems
+
+## Description
+Advanced automated control system for NASA launch vehicle operations, featuring real-time monitoring and safety protocols.
+
+## Technologies Used
+- Embedded Systems
+- Serial Communication
+- Data Decoding
+- Fiber-Optic Interfaces
+- Polar Coordinate Calculations
+- Real-Time Monitoring
+- Fault Detection
+- Safety Protocols
+- Telemetry Processing
+
+## Project Images
+**Main Image:** ../assets/WebsiteImages/Launcher.jpg
+**Additional Images:**
+- ../assets/WebsiteImages/launcher_control.jpg
+- ../assets/WebsiteImages/LCS_Wiring.png
+- [Add image path here - e.g., ../assets/WebsiteImages/control-system-diagram.png]
+- [Add image path here - e.g., ../assets/WebsiteImages/safety-protocols-flowchart.png]
+
+## Detailed Content
+
+### Overview
+The Automated Launcher Control System represents a comprehensive solution for managing NASA sounding rocket launch operations. This system integrates advanced data communication protocols, fiber-optic control interfaces, and sophisticated safety blockout angle calculations in polar coordinates to ensure secure and fault-tolerant launch operations.
+
+### Objectives
+- Develop a robust automated control system for launch vehicle operations
+- Implement real-time monitoring and data acquisition capabilities
+- Integrate advanced safety protocols and fault detection systems
+- Create user-friendly interfaces for launch control personnel
+- Ensure compliance with NASA safety standards and protocols
+
+### Technical Approach
+**Embedded Systems:** Development of microcontroller-based control systems with real-time processing capabilities for launch sequence management.
+
+**Serial Communication:** Implementation of reliable data communication protocols for interfacing with various launch vehicle subsystems.
+
+**Data Decoding:** Advanced algorithms for processing and interpreting telemetry data from multiple sources during launch operations.
+
+**Safety Systems:** Integration of comprehensive safety protocols, including blockout angle calculations and emergency abort procedures.
+
+### Key Contributions
+- Designed and implemented the core control system architecture
+- Developed advanced data communication protocols for reliable system integration
+- Created sophisticated safety blockout angle calculation algorithms in polar coordinates
+- Integrated fiber-optic control interfaces for enhanced system reliability
+- Implemented comprehensive fault detection and emergency abort procedures
+- Collaborated with NASA engineers to ensure compliance with safety standards
+
+### Results
+The system successfully demonstrated enhanced reliability and safety in launch operations, with improved real-time monitoring capabilities and reduced human error potential. The project received recognition through the NASA Outstanding Achievement Award for exceptional contributions to launch vehicle control systems.
+
+### Future Work
+Future enhancements include:
+- Integration with advanced AI-based decision support systems
+- Expanded telemetry capabilities
+- Development of predictive maintenance algorithms for improved system reliability and reduced operational costs
+
+## Awards & Recognition
+**NASA Outstanding Achievement Award (2025)** - Received in recognition for developing an Automated Launcher Control System for a sounding rocket launcher, integrating advanced data communication protocols, fiber-optic control interfaces, and safety blockout angle calculations in polar coordinates to ensure secure and fault-tolerant launch operations.
+
+## Additional Information
+**Link to HTML page:** projects/automated-launcher-control-system.html
+**Award Image:** ../assets/WebsiteImages/NASA_Award.jpg
+
+## Notes for Content Management
+- Add specific technical specifications and system requirements
+- Include detailed safety protocol documentation
+- Add any publications or presentations related to this project
+- Include information about the NASA collaboration and mentorship
+- Add any relevant technical documentation or user manuals
+- Include information about system testing and validation procedures
+- Add details about the launch operations and success metrics

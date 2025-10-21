@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Project - Briggs Pugner</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        .project-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .project-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .project-section {
+            margin-bottom: 3rem;
+        }
+        .project-section h2 {
+            color: #2563eb;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 0.5rem;
+        }
+        .project-section h3 {
+            color: #1f2937;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .meta-item {
+            text-align: center;
+        }
+        .meta-item h4 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #1d4ed8;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .tech-tag {
+            background: #e0e7ff;
+            color: #2563eb;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .project-image {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            background: #f3f4f6;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem auto;
+            color: #6b7280;
+            font-size: 1.1rem;
+        }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .content-list {
+            list-style: none;
+            padding: 0;
+        }
+        .content-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .content-list li::before {
+            content: '•';
+            color: #2563eb;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .technical-approach {
+            margin-bottom: 2rem;
+        }
+        .technical-approach h4 {
+            color: #1f2937;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .technical-approach p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-hero">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            <h1 id="project-title">Loading...</h1>
+            <p id="project-subtitle">Loading...</p>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <div class="project-meta">
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h4>Duration</h4>
+                    <p id="project-duration">Loading...</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Role</h4>
+                    <p id="project-role">Loading...</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Institution</h4>
+                    <p id="project-institution">Loading...</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Status</h4>
+                    <p id="project-status">Loading...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p id="project-overview">Loading...</p>
+            
+            <div class="project-image" id="project-image-container">
+                <i class="fas fa-cog fa-spin" style="font-size: 4rem; color: #2563eb;"></i>
+            </div>
+        </div>
+
+        <div class="project-section" id="objectives-section" style="display: none;">
+            <h2>Research Objectives</h2>
+            <ul class="content-list" id="objectives-list">
+            </ul>
+        </div>
+
+        <div class="project-section" id="technical-approach-section" style="display: none;">
+            <h2>Technical Approach</h2>
+            <div id="technical-approach-content">
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Technologies & Tools</h2>
+            <div class="tech-stack" id="tech-stack">
+            </div>
+        </div>
+
+        <div class="project-section" id="contributions-section" style="display: none;">
+            <h2>Key Contributions</h2>
+            <ul class="content-list" id="contributions-list">
+            </ul>
+        </div>
+
+        <div class="project-section" id="results-section" style="display: none;">
+            <h2>Results & Impact</h2>
+            <p id="results-content">Loading...</p>
+        </div>
+
+        <div class="project-section" id="future-work-section" style="display: none;">
+            <h2>Future Work</h2>
+            <p id="future-work-content">Loading...</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Briggs Pugner</h3>
+                    <p>Computer Engineering Student at UMES</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="index.html#education">Education</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Briggs Pugner. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get project ID from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+        
+        let websiteData = null;
+        
+        // Load project data
+        async function loadProjectData() {
+            try {
+                const response = await fetch('data.json');
+                websiteData = await response.json();
+                
+                if (projectId && websiteData.projects) {
+                    const project = websiteData.projects.find(p => p.link.includes(projectId));
+                    if (project) {
+                        populateProjectPage(project);
+                    } else {
+                        showError('Project not found');
+                    }
+                } else {
+                    showError('No project ID specified');
+                }
+            } catch (error) {
+                console.error('Error loading project data:', error);
+                showError('Failed to load project data');
+            }
+        }
+        
+        function populateProjectPage(project) {
+            // Update page title
+            document.getElementById('page-title').textContent = `${project.title} - Briggs Pugner`;
+            
+            // Update hero section
+            document.getElementById('project-title').textContent = project.title;
+            document.getElementById('project-subtitle').textContent = project.subtitle || project.description;
+            
+            // Update meta information
+            document.getElementById('project-duration').textContent = project.duration;
+            document.getElementById('project-role').textContent = project.role;
+            document.getElementById('project-institution').textContent = project.institution || 'University of Maryland Eastern Shore';
+            document.getElementById('project-status').textContent = project.status || 'Ongoing';
+            
+            // Update overview
+            if (project.detailedContent && project.detailedContent.overview) {
+                document.getElementById('project-overview').textContent = project.detailedContent.overview;
+            } else {
+                document.getElementById('project-overview').textContent = project.description;
+            }
+            
+            // Update project image
+            const imageContainer = document.getElementById('project-image-container');
+            if (project.image) {
+                imageContainer.innerHTML = `<img src="${project.image}" alt="${project.title}">`;
+            } else {
+                imageContainer.innerHTML = '<i class="fas fa-project-diagram" style="font-size: 4rem; color: #2563eb;"></i>';
+            }
+            
+            // Update technologies
+            const techStack = document.getElementById('tech-stack');
+            const allTechnologies = [...(project.technologies || []), ...(project.detailedContent?.additionalTechnologies || [])];
+            techStack.innerHTML = allTechnologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('');
+            
+            // Update detailed content sections
+            if (project.detailedContent) {
+                updateDetailedContent(project.detailedContent);
+            }
+        }
+        
+        function updateDetailedContent(detailedContent) {
+            // Objectives
+            if (detailedContent.objectives) {
+                const objectivesSection = document.getElementById('objectives-section');
+                const objectivesList = document.getElementById('objectives-list');
+                objectivesSection.style.display = 'block';
+                objectivesList.innerHTML = detailedContent.objectives.split('\n').filter(item => item.trim()).map(item => `<li>${item.trim()}</li>`).join('');
+            }
+            
+            // Technical Approach
+            if (detailedContent.technicalApproach) {
+                const technicalSection = document.getElementById('technical-approach-section');
+                const technicalContent = document.getElementById('technical-approach-content');
+                technicalSection.style.display = 'block';
+                
+                // Parse technical approach sections
+                const sections = detailedContent.technicalApproach.split(/(?=[A-Z][^:]*:)/).filter(s => s.trim());
+                technicalContent.innerHTML = sections.map(section => {
+                    const [title, content] = section.split(':').map(s => s.trim());
+                    return `
+                        <div class="technical-approach">
+                            <h4>${title}</h4>
+                            <p>${content}</p>
+                        </div>
+                    `;
+                }).join('');
+            }
+            
+            // Key Contributions
+            if (detailedContent.keyContributions) {
+                const contributionsSection = document.getElementById('contributions-section');
+                const contributionsList = document.getElementById('contributions-list');
+                contributionsSection.style.display = 'block';
+                contributionsList.innerHTML = detailedContent.keyContributions.split('\n').filter(item => item.trim()).map(item => `<li>${item.trim()}</li>`).join('');
+            }
+            
+            // Results
+            if (detailedContent.results) {
+                const resultsSection = document.getElementById('results-section');
+                const resultsContent = document.getElementById('results-content');
+                resultsSection.style.display = 'block';
+                resultsContent.textContent = detailedContent.results;
+            }
+            
+            // Future Work
+            if (detailedContent.futureWork) {
+                const futureWorkSection = document.getElementById('future-work-section');
+                const futureWorkContent = document.getElementById('future-work-content');
+                futureWorkSection.style.display = 'block';
+                futureWorkContent.textContent = detailedContent.futureWork;
+            }
+        }
+        
+        function showError(message) {
+            document.getElementById('project-title').textContent = 'Error';
+            document.getElementById('project-subtitle').textContent = message;
+        }
+        
+        // Load project data when page loads
+        document.addEventListener('DOMContentLoaded', loadProjectData);
+    </script>
+</body>
+</html>

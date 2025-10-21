@@ -1,0 +1,59 @@
+# Cell Impedance Project
+
+## Project Overview
+**Title:** Cell Impedance Project
+**Role:** Undergraduate Researcher
+**Duration:** 2025
+**Institution:** University of Maryland Eastern Shore
+**Status:** [Add status - e.g., Ongoing, Completed, Planning]
+
+## Description
+Investigating electrical impedance characteristics of biological cells for medical diagnostics and research applications.
+
+## Technologies Used
+- Electronics
+- Biomedical Engineering
+- Signal Processing
+- [Add additional technologies as needed]
+
+## Project Images
+**Main Image:** ../assets/WebsiteImages/cell_impedance.png
+**Additional Images:**
+- [Add image path here - e.g., ../assets/WebsiteImages/impedance-measurement-setup.jpg]
+- [Add image path here - e.g., ../assets/WebsiteImages/cell-analysis-diagram.png]
+- [Add image path here - e.g., ../assets/WebsiteImages/electrical-circuit-schematic.png]
+
+## Detailed Content
+
+### Overview
+[Add detailed project overview here]
+
+### Objectives
+- [Add objective 1]
+- [Add objective 2]
+- [Add objective 3]
+- [Add additional objectives as needed]
+
+### Technical Approach
+[Add detailed technical approach and methodology]
+
+### Key Contributions
+- [Add your specific contributions to this project]
+- [Add additional contributions]
+
+### Results
+[Add project results, findings, and outcomes]
+
+### Future Work
+[Add future research directions and next steps]
+
+## Additional Information
+**Link to HTML page:** projects/cell-impedance-project.html
+
+## Notes for Content Management
+- Add specific experimental results and data
+- Include detailed technical specifications
+- Add any publications or presentations related to this project
+- Update status and timeline as project progresses
+- Add team member information if applicable
+- Add any relevant research papers or references

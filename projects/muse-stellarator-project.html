@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSE Stellarator Project - Briggs Pugner</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        .project-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .project-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        .project-section {
+            margin-bottom: 3rem;
+        }
+        .project-section h2 {
+            color: #2563eb;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 0.5rem;
+        }
+        .project-section h3 {
+            color: #1f2937;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .meta-item {
+            text-align: center;
+        }
+        .meta-item h4 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #1d4ed8;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .tech-tag {
+            background: #e0e7ff;
+            color: #2563eb;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .project-image {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            background: #f3f4f6;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem auto;
+            color: #6b7280;
+            font-size: 1.1rem;
+        }
+        .nasa-badge {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-hero">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            <h1>Mirror Langmuir Probe for MUSE Compact Stellarator</h1>
+            <p>NASA Collaboration - Fusion Research & Plasma Diagnostics</p>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <div class="nasa-badge">
+            <h3><i class="fas fa-rocket"></i> NASA Collaboration Project</h3>
+            <p>Advanced plasma diagnostic development for fusion energy research</p>
+        </div>
+
+        <div class="project-meta">
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <h4>Duration</h4>
+                    <p>Summer 2025</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Role</h4>
+                    <p>Research Intern</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Collaboration</h4>
+                    <p>PPPL</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Status</h4>
+                    <p>Ongoing</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>The Mirror Langmuir Probe project is part of the MUSE (Modular Stellarator Experiment) compact stellarator research initiative in collaboration with NASA. This cutting-edge project focuses on developing advanced plasma diagnostic tools for fusion energy research, specifically designing and implementing mirror Langmuir probes to measure plasma parameters in the stellarator environment.</p>
+            
+            <div class="project-image">
+                <img src="../assets/WebsiteImages/MLP_Blk_Diagram.png" alt="Mirror Langmuir Probe Block Diagram" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Research Objectives</h2>
+            <ul>
+                <li>Design and fabricate mirror Langmuir probes for plasma diagnostics</li>
+                <li>Develop measurement techniques for plasma density and temperature</li>
+                <li>Integrate diagnostic systems with the MUSE compact stellarator</li>
+                <li>Analyze plasma behavior and confinement characteristics</li>
+                <li>Contribute to fusion energy research and development</li>
+                <li>Advance plasma diagnostic instrumentation technology</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Technical Approach</h2>
+            <h3>Langmuir Probe Design</h3>
+            <p>Development of specialized mirror Langmuir probes capable of withstanding the extreme conditions of plasma environments while providing accurate measurements of electron density, temperature, and plasma potential.</p>
+            
+            <h3>Plasma Diagnostics</h3>
+            <p>Implementation of advanced diagnostic techniques to characterize plasma parameters and understand confinement physics in the stellarator configuration.</p>
+            
+            <h3>Data Acquisition Systems</h3>
+            <p>Design and integration of high-speed data acquisition systems for real-time plasma parameter monitoring and analysis.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Technologies & Tools</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">Plasma Physics</span>
+                <span class="tech-tag">Fusion Technology</span>
+                <span class="tech-tag">Instrumentation</span>
+                <span class="tech-tag">Langmuir Probes</span>
+                <span class="tech-tag">Data Acquisition</span>
+                <span class="tech-tag">Plasma Diagnostics</span>
+                <span class="tech-tag">High-Voltage Systems</span>
+                <span class="tech-tag">Vacuum Technology</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Contributions</h2>
+            <ul>
+                <li>Assisted in the design and fabrication of mirror Langmuir probe systems</li>
+                <li>Developed data acquisition and signal processing algorithms</li>
+                <li>Conducted plasma parameter measurements and analysis</li>
+                <li>Collaborated with NASA researchers on experimental protocols</li>
+                <li>Contributed to system integration and testing procedures</li>
+                <li>Analyzed experimental data to understand plasma behavior</li>
+                <li>Documented research findings and technical specifications</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Fusion Energy Context</h2>
+            <h3>Stellarator Technology</h3>
+            <p>The MUSE compact stellarator represents an advanced approach to magnetic confinement fusion, offering potential advantages in plasma stability and continuous operation compared to traditional tokamak designs.</p>
+            
+            <h3>Plasma Diagnostics</h3>
+            <p>Accurate plasma diagnostics are crucial for understanding and optimizing fusion reactor performance, making this research essential for the development of practical fusion energy systems.</p>
+            
+            <h3>PPPL Collaboration</h3>
+            <p>This project leverages PPPL's expertise in plasma physics and fusion research to advance stellarator technologies with high temporal and spatial resolution plasma diagnostics for future stellarator research.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Results & Impact</h2>
+            <p>This research contributes to the global effort to develop clean, sustainable fusion energy by:</p>
+            <ul>
+                <li>Advancing plasma diagnostic instrumentation technology</li>
+                <li>Improving understanding of stellarator plasma physics</li>
+                <li>Supporting the development of compact fusion reactor designs</li>
+                <li>Contributing to NASA's fusion research initiatives</li>
+                <li>Training the next generation of fusion energy researchers</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Future Work</h2>
+            <p>The project continues to advance plasma diagnostic capabilities and expand our understanding of fusion plasma behavior. Future research directions include:</p>
+            <ul>
+                <li>Development of advanced probe array systems</li>
+                <li>Integration with machine learning for automated plasma analysis</li>
+                <li>Expansion to other fusion reactor configurations</li>
+                <li>Collaboration with international fusion research programs</li>
+                <li>Technology transfer to commercial fusion energy companies</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Educational Impact</h2>
+            <p>This project provides invaluable hands-on experience in cutting-edge fusion research, exposing students to:</p>
+            <ul>
+                <li>Advanced plasma physics concepts</li>
+                <li>High-tech instrumentation development</li>
+                <li>Collaborative research with federal agencies</li>
+                <li>Real-world applications of engineering principles</li>
+                <li>Global energy challenges and solutions</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Briggs Pugner</h3>
+                    <p>Computer Engineering Student at UMES</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="index.html#education">Education</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Briggs Pugner. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

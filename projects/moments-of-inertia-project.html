@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments of Inertia in 3-Axis for Spaceflight Objects - Briggs Pugner</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        
+        .project-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .project-hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .meta-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .project-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .project-section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-section h2 {
+            color: #2563eb;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+        
+        .project-image {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 10px;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-tag {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #1d4ed8;
+        }
+        
+        .objectives-list, .approach-list, .contributions-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .objectives-list li, .approach-list li, .contributions-list li {
+            background: #f1f5f9;
+            margin: 0.8rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .objectives-list li::before {
+            content: "🎯";
+            margin-right: 0.5rem;
+        }
+        
+        .approach-list li::before {
+            content: "⚙️";
+            margin-right: 0.5rem;
+        }
+        
+        .contributions-list li::before {
+            content: "💡";
+            margin-right: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .project-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .project-meta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .project-section {
+                margin: 2rem 0;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="project-hero">
+        <div class="project-container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            <h1>Moments of Inertia in 3-Axis for Spaceflight Objects</h1>
+            <p class="subtitle">Advanced Rotational Dynamics Analysis for Aerospace Applications</p>
+            
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <strong>Duration:</strong> 2025
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <strong>Role:</strong> Research Assistant
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-university"></i>
+                    <strong>Institution:</strong> University of Maryland Eastern Shore
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-container">
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>The Moments of Inertia in 3-Axis for Spaceflight Objects project focuses on developing comprehensive mathematical models and computational tools for analyzing the rotational dynamics of spacecraft and spaceflight objects. This research is critical for understanding how objects behave in microgravity environments and for designing stable, controllable spacecraft systems.</p>
+            
+            <div class="project-image">
+                <i class="fas fa-satellite-dish" style="font-size: 4rem; color: #2563eb;"></i>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Research Objectives</h2>
+            <ul class="objectives-list">
+                <li>Develop accurate 3-axis moment of inertia calculations for complex spaceflight geometries</li>
+                <li>Create computational models for predicting rotational behavior in microgravity</li>
+                <li>Analyze stability characteristics of different spacecraft configurations</li>
+                <li>Design control algorithms for attitude stabilization using inertia properties</li>
+                <li>Validate theoretical models through simulation and experimental data</li>
+                <li>Investigate the effects of mass distribution on spacecraft maneuverability</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Technical Approach</h2>
+            <ul class="approach-list">
+                <li><strong>Mathematical Modeling:</strong> Developed tensor-based calculations for 3D moment of inertia matrices</li>
+                <li><strong>Computational Analysis:</strong> Implemented numerical methods for complex geometry integration</li>
+                <li><strong>Simulation Development:</strong> Created physics-based simulations for rotational dynamics</li>
+                <li><strong>Control Systems:</strong> Designed feedback control algorithms for attitude management</li>
+                <li><strong>Validation Studies:</strong> Compared theoretical predictions with known spacecraft data</li>
+                <li><strong>Optimization:</strong> Developed methods for optimal mass distribution design</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Contributions</h2>
+            <ul class="contributions-list">
+                <li>Developed comprehensive 3-axis moment of inertia calculation algorithms for irregular spacecraft geometries</li>
+                <li>Created MATLAB/Simulink models for real-time rotational dynamics simulation</li>
+                <li>Implemented advanced numerical integration techniques for complex mass distributions</li>
+                <li>Designed control system architectures for multi-axis attitude stabilization</li>
+                <li>Conducted parametric studies on spacecraft stability and maneuverability</li>
+                <li>Validated theoretical models against historical spacecraft mission data</li>
+                <li>Developed optimization algorithms for spacecraft configuration design</li>
+                <li>Created educational tools for teaching rotational dynamics concepts</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Technical Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">MATLAB</span>
+                <span class="tech-tag">Simulink</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Numerical Analysis</span>
+                <span class="tech-tag">Linear Algebra</span>
+                <span class="tech-tag">Control Systems</span>
+                <span class="tech-tag">Physics Simulation</span>
+                <span class="tech-tag">Tensor Mathematics</span>
+                <span class="tech-tag">Aerospace Engineering</span>
+                <span class="tech-tag">Rotational Dynamics</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Research Impact</h2>
+            <p>This research contributes to the fundamental understanding of spacecraft rotational dynamics and provides practical tools for aerospace engineers. The developed models and algorithms can be applied to:</p>
+            <ul>
+                <li><strong>Spacecraft Design:</strong> Optimizing mass distribution for improved stability and control</li>
+                <li><strong>Mission Planning:</strong> Predicting rotational behavior during critical mission phases</li>
+                <li><strong>Control Systems:</strong> Designing more efficient attitude control algorithms</li>
+                <li><strong>Educational Applications:</strong> Teaching advanced rotational dynamics concepts</li>
+                <li><strong>Future Missions:</strong> Supporting next-generation spacecraft development</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Future Work</h2>
+            <p>Future research directions include:</p>
+            <ul>
+                <li>Integration with real-time spacecraft telemetry data</li>
+                <li>Development of machine learning models for predictive control</li>
+                <li>Extension to flexible body dynamics and structural interactions</li>
+                <li>Collaboration with aerospace industry partners for validation</li>
+                <li>Publication of research findings in peer-reviewed journals</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

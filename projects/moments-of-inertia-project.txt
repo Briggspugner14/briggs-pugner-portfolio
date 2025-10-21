@@ -1,0 +1,81 @@
+# Moments of Inertia in 3-Axis for Spaceflight Objects
+
+## Project Overview
+**Title:** Moments of Inertia in 3-Axis for Spaceflight Objects
+**Role:** Research Assistant
+**Duration:** Fall 2025
+**Institution:** University of Maryland Eastern Shore
+**Status:** [Add status - e.g., Completed, Ongoing, Planning]
+
+## Description
+Advanced rotational dynamics analysis for aerospace applications, developing comprehensive mathematical models and computational tools for spacecraft stability and control systems.
+
+## Technologies Used
+- MATLAB
+- Simulink
+- Python
+- Control Systems
+- Aerospace Engineering
+- [Add additional technologies as needed - e.g., SolidWorks, CAD modeling, numerical analysis]
+
+## Project Images
+**Main Image:** ../assets/WebsiteImages/3-axis-cover.png
+**Additional Images:**
+- [Add image path here - e.g., ../assets/WebsiteImages/spacecraft-3d-model.png]
+- [Add image path here - e.g., ../assets/WebsiteImages/inertia-tensor-calculations.png]
+- [Add image path here - e.g., ../assets/WebsiteImages/control-system-simulation.png]
+
+## Detailed Content
+
+### Overview
+[Add detailed project overview about calculating moments of inertia for spaceflight objects, including the importance for spacecraft stability and control]
+
+### Objectives
+- [Add objective 1 - e.g., Develop accurate 3-axis moment of inertia calculations]
+- [Add objective 2 - e.g., Create computational models for spacecraft dynamics]
+- [Add objective 3 - e.g., Validate models with real spacecraft data]
+- [Add additional objectives as needed]
+
+### Technical Approach
+[Add detailed technical approach including:
+- Mathematical modeling of 3-axis rotational dynamics
+- Computational methods for moment of inertia calculations
+- MATLAB/Simulink implementation for simulation
+- Python scripting for data analysis and visualization
+- Integration with control systems design]
+
+### Key Contributions
+- [Add your specific contributions to this project]
+- [Add additional contributions such as:
+  - Mathematical model development
+  - Computational tool creation
+  - Simulation and validation work
+  - Documentation and analysis]
+
+### Results
+[Add project results, findings, and outcomes including:
+- Accuracy of moment of inertia calculations
+- Validation results with known spacecraft
+- Computational efficiency improvements
+- Applications to spacecraft design]
+
+### Future Work
+[Add future research directions and next steps for:
+- Model refinement and optimization
+- Integration with spacecraft design tools
+- Extension to more complex geometries
+- Real-time calculation capabilities]
+
+## Additional Information
+**Link to HTML page:** projects/moments-of-inertia-project.html
+**Application:** Aerospace engineering and spacecraft design
+
+## Notes for Content Management
+- Add specific mathematical formulations and equations
+- Include detailed computational algorithms and methods
+- Add any publications or presentations related to this project
+- Update status and timeline as project progresses
+- Add team member information if applicable
+- Add any relevant research papers or aerospace references
+- Include information about validation cases and test results
+- Add details about software tools and implementation specifics

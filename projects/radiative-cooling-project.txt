@@ -1,0 +1,73 @@
+# Radiative Cooling Project
+
+## Project Overview
+**Title:** Radiative Cooling Project
+**Role:** Undergraduate Researcher
+**Duration:** 2024 - 2025
+**Institution:** University of Maryland Eastern Shore
+**Status:** Ongoing
+**Subtitle:** Innovative Energy-Efficient Cooling Technologies
+
+## Description
+Developing innovative radiative cooling technologies for energy-efficient applications. Working on materials science and thermal management systems.
+
+## Technologies Used
+- Thermal Engineering
+- Materials Science
+- Energy Systems
+- Heat Transfer Analysis
+- Optical Characterization
+- Thermal Simulation
+- Environmental Testing
+
+## Project Images
+**Main Image:** ../assets/WebsiteImages/RadiativeCooling.jpg
+**Additional Images:**
+- [Add image path here - e.g., ../assets/WebsiteImages/thermal-analysis.png]
+- [Add image path here - e.g., ../assets/WebsiteImages/materials-testing.jpg]
+- [Add image path here - e.g., ../assets/WebsiteImages/cooling-system-diagram.png]
+
+## Detailed Content
+
+### Overview
+The Radiative Cooling Project focuses on developing innovative cooling technologies that utilize radiative heat transfer to achieve energy-efficient temperature regulation. This research addresses the growing need for sustainable cooling solutions in various applications, including building systems.
+
+### Objectives
+- Develop materials with enhanced radiative cooling properties
+- Investigate the integration of radiative cooling with existing technologies
+- Evaluate energy efficiency improvements and cost-effectiveness
+- Explore applications in buildings and industrial systems
+
+### Technical Approach
+**Materials Science:** Research focuses on developing and characterizing materials with specific optical properties such as that enhance radiative cooling. This includes studying the interaction between materials and infrared radiation in the atmospheric window.
+
+**Thermal Analysis:** Comprehensive thermal modeling and simulation to understand heat transfer mechanisms and optimize cooling performance under various environmental conditions.
+
+**System Integration:** Design and testing of integrated cooling systems that combine radiative cooling with conventional thermal management approaches.
+
+### Key Contributions
+- Conducted literature review on radiative cooling materials and technologies
+- Assisted in experimental setup and data collection for thermal performance testing
+- Contributed to thermal modeling and simulation of cooling systems
+- Analyzed experimental data and helped identify optimization opportunities
+- Collaborated with team members on system design and integration challenges
+
+### Results
+This research contributes to the development of sustainable cooling technologies that can significantly reduce energy consumption in various applications. The project has potential implications for energy-efficient building cooling systems, electronics thermal management, industrial process cooling, and reduction of greenhouse gas emissions from cooling systems.
+
+### Future Work
+The project continues to explore advanced materials and system configurations to further improve radiative cooling efficiency and expand potential applications. Future research directions include:
+- Development of scalable manufacturing processes
+- Integration with smart building systems
+- Long-term performance and durability studies
+- Economic analysis and market feasibility studies
+
+## Additional Information
+**Link to HTML page:** projects/radiative-cooling-project.html
+
+## Notes for Content Management
+- Add specific experimental results and data
+- Include detailed technical specifications
+- Add any publications or presentations related to this project
+- Update status and timeline as project progresses
+- Add team member information if applicable

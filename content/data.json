@@ -1,0 +1,124 @@
+{
+  "personalInfo": {
+    "name": "Briggs Pugner",
+    "title": "Computer Engineering Student & Research Portfolio",
+    "description": "Welcome to my academic portfolio showcasing my educational journey, research contributions, and achievements in Computer Engineering at the University of Maryland Eastern Shore.",
+    "email": "Bjpugner@umes.edu",
+    "phone": "443-373-9424",
+    "location": "University of Maryland Eastern Shore, Maryland, United States",
+    "linkedin": "https://www.linkedin.com/in/briggs-pugner/",
+    "website": "https://briggspugner.weebly.com/"
+  },
+  "education": {
+    "degree": "Bachelor of Science in Computer Engineering",
+    "institution": "University of Maryland Eastern Shore",
+    "duration": "2022 - 2025 (Expected)",
+    "description": "Junior Computer Engineering student with focus on hardware design, embedded systems, and computer vision applications. Currently maintaining perfect academic standing.",
+    "achievements": [
+      "GPA: 4.0/4.0",
+      "Dean's List (2024-2025)",
+      "Richard A. Henson Honors Program (2024-2025)",
+      "NASA Outstanding Achievement Award (2025)"
+    ]
+  },
+  "awards": [
+    {
+      "title": "Outstanding Achievement Award",
+      "organization": "NASA",
+      "date": "2025",
+      "icon": "rocket",
+      "description": "Received NASA Outstanding Achievement Award in recognition for developing an Automated Launcher Control System for a sounding rocket launcher, integrating advanced data communication protocols, fiber-optic control interfaces, and safety blockout angle calculations in polar coordinates to ensure secure and fault-tolerant launch operations."
+    },
+    {
+      "title": "Dean's List",
+      "organization": "University of Maryland Eastern Shore",
+      "date": "2024-2025",
+      "icon": "graduation-cap",
+      "description": "Consistent academic excellence maintaining a perfect 4.0 GPA throughout undergraduate studies."
+    },
+    {
+      "title": "Richard A. Henson Honors Program",
+      "organization": "University of Maryland Eastern Shore",
+      "date": "2024-2025",
+      "icon": "medal",
+      "description": "Selected for the prestigious honors program recognizing academic excellence and leadership potential."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Radiative Cooling Project",
+      "role": "Undergraduate Researcher",
+      "duration": "2024 - 2025",
+      "image": "WebsiteImages/RadiativeCooling.jpg",
+      "description": "Developing innovative radiative cooling technologies for energy-efficient applications. Working on materials science and thermal management systems.",
+      "technologies": ["Thermal Engineering", "Materials Science", "Energy Systems"],
+      "link": "radiative-cooling-project.html"
+    },
+    {
+      "title": "Cell Impedance Project",
+      "role": "Undergraduate Researcher",
+      "duration": "2025",
+      "image": "WebsiteImages/cell_impedance.png",
+      "description": "Investigating electrical impedance characteristics of biological cells for medical diagnostics and research applications.",
+      "technologies": ["Electronics", "Biomedical Engineering", "Signal Processing"],
+      "link": "cell-impedance-project.html"
+    },
+    {
+      "title": "Mirror Langmuir Probe for MUSE Compact Stellarator",
+      "role": "Research Intern",
+      "duration": "Summer 2025",
+      "image": "WebsiteImages/MLP_Blk_Diagram.png",
+      "description": "Developing advanced plasma diagnostic tools for the MUSE compact stellarator fusion research project in collaboration with NASA.",
+      "technologies": ["Plasma Physics", "Fusion Technology", "Instrumentation"],
+      "link": "muse-stellarator-project.html"
+    },
+    {
+      "title": "Training of Neural Network based on the Deformation of Sickle Cells using computer vision",
+      "role": "Lead Developer",
+      "duration": "Fall 2025",
+      "image": "WebsiteImages/SickleDetectionCover.png",
+      "description": "Developing computer vision algorithms for automated detection and analysis of sickle cell disease in medical imaging.",
+      "technologies": ["Computer Vision", "Machine Learning", "YOLO"],
+      "link": "sickle-cell-detection-project.html"
+    },
+    {
+      "title": "Automated Launcher Control System",
+      "role": "Lead Developer",
+      "duration": "Spring 2025",
+      "image": "WebsiteImages/Launcher.jpg",
+      "description": "Advanced automated control system for NASA launch vehicle operations, featuring real-time monitoring and safety protocols.",
+      "technologies": ["Embedded Systems", "Serial Communication", "Data Decoding"],
+      "link": "automated-launcher-control-system.html"
+    },
+    {
+      "title": "Moments of Inertia in 3-Axis for Spaceflight Objects",
+      "role": "Research Assistant",
+      "duration": "Fall 2025",
+      "image": "WebsiteImages/3-axis-cover.png",
+      "description": "Advanced rotational dynamics analysis for aerospace applications, developing comprehensive mathematical models and computational tools for spacecraft stability and control systems.",
+      "technologies": ["MATLAB", "Simulink", "Python", "Control Systems", "Aerospace Engineering"],
+      "link": "moments-of-inertia-project.html"
+    }
+  ],
+  "skills": {
+    "programming": [
+      {"name": "Python", "level": 90},
+      {"name": "C++", "level": 85},
+      {"name": "VHDL", "level": 80},
+      {"name": "Verilog", "level": 80}
+    ],
+    "software": [
+      {"name": "SolidWorks", "level": 85},
+      {"name": "Fusion 360", "level": 80},
+      {"name": "KiCad", "level": 85},
+      {"name": "LTspice", "level": 80},
+      {"name": "NI LabVIEW", "level": 75},
+      {"name": "Linux", "level": 85}
+    ],
+    "languages": [
+      {"name": "English", "level": "Native"},
+      {"name": "Spanish", "level": "Fluent"},
+      {"name": "French", "level": "Intermediate"}
+    ]
+  }
+}
