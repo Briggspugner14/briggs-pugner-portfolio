@@ -514,6 +514,23 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+        // Debug skill bars
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, checking skill bars...');
+            const skillBars = document.querySelectorAll('.skill-progress');
+            console.log('Found skill bars:', skillBars.length);
+            
+            // Test animation after 2 seconds
+            setTimeout(() => {
+                skillBars.forEach((bar, index) => {
+                    const width = bar.getAttribute('data-width');
+                    console.log(`Animating bar ${index}: ${width}`);
+                    bar.style.width = width;
+                });
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
