@@ -181,5 +181,3 @@ Linux: 85
 
 ### Languages
 English: Native
-Spanish: Fluent
-French: Intermediate
