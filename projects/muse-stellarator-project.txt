@@ -1,74 +1,24 @@
 # Mirror Langmuir Probe for MUSE Compact Stellarator
 
-## Project Overview
-**Title:** Mirror Langmuir Probe for MUSE Compact Stellarator
-**Role:** Research Intern
-**Duration:** Summer 2025
-**Institution:** NASA (in collaboration with University of Maryland Eastern Shore)
-**Status:** [Add status - e.g., Completed, Ongoing, Planning]
+## Abstract
+Accurate and time-resolved measurements of plasma parameters are critical
+for understanding the dynamics of magnetic confinement devices. In the MUSE
+compact stellarator, the need for precise diagnostics is addressed using a high-timeresolution system based on the Mirror Langmuir Probe (MLP). Unlike conventional
+Langmuir probes, which sweep across a wide range of bias voltages, the MLP rapidly
+cycles through pre-selected voltages to extract electron temperature (Te), electron
+density (ne), and floating potential (Vf ) from a single probe tip. This rapid cycling
+enables spatially and temporally localized measurements, essential for studying
+transient events in the core, edge, and scrape-off layer (SOL) regions.
+The MLP system was implemented using a field-programmable gate array (FPGA),
+following the approach described by Vincent et al. [1]. During this internship
+project, the focus was on ensuring robust control and data acquisition software,
+diagnosing and resolving errors, and rebuilding the code within a Linux virtual
+machine using the Koheron make system. The FPGA implementation was subsequently deployed to hardware, and the system was integrated into the MUSE
+experimental platform. These efforts establish a foundation for high-fidelity measurements of transient plasma dynamics and demonstrate the feasibility of FPGAbased, high-speed diagnostics in stellarator research.
 
-## Description
-Developing advanced plasma diagnostic tools for the MUSE compact stellarator fusion research project in collaboration with NASA.
+## Project Poster
+![SULI Poster](../assets/WebsiteImages/SULI_Poster.png)
+*High-Speed Plasma Diagnostics Using a Mirror Langmuir Probe on the MUSE Compact Stellarator - SULI Program Poster*
 
-## Technologies Used
-- Plasma Physics
-- Fusion Technology
-- Instrumentation
-- [Add additional technologies as needed]
-
-## Project Images
-**Main Image:** ../assets/WebsiteImages/MLP_Blk_Diagram.png
-**Additional Images:**
-- [Add image path here - e.g., ../assets/WebsiteImages/stellarator-diagram.png]
-- [Add image path here - e.g., ../assets/WebsiteImages/plasma-diagnostics-setup.jpg]
-- [Add image path here - e.g., ../assets/WebsiteImages/mirror-langmuir-probe-design.png]
-
-## Detailed Content
-
-### Overview
-[Add detailed project overview about the MUSE compact stellarator and your role in developing plasma diagnostic tools]
-
-### Objectives
-- [Add objective 1 - e.g., Develop advanced plasma diagnostic capabilities]
-- [Add objective 2 - e.g., Improve understanding of plasma behavior in stellarator configuration]
-- [Add objective 3 - e.g., Contribute to fusion research advancement]
-- [Add additional objectives as needed]
-
-### Technical Approach
-[Add detailed technical approach including:
-- Mirror Langmuir Probe design and implementation
-- Plasma diagnostic methodologies
-- Data acquisition and analysis techniques
-- Integration with MUSE stellarator systems]
-
-### Key Contributions
-- [Add your specific contributions to this project]
-- [Add additional contributions such as:
-  - Probe design and fabrication
-  - Data analysis and interpretation
-  - System integration and testing]
-
-### Results
-[Add project results, findings, and outcomes including:
-- Diagnostic capabilities achieved
-- Plasma measurements obtained
-- Research contributions made]
-
-### Future Work
-[Add future research directions and next steps for:
-- Further diagnostic development
-- Extended plasma studies
-- Collaboration opportunities]
-
-## Additional Information
-**Link to HTML page:** projects/muse-stellarator-project.html
-**Collaboration:** NASA partnership project
-
-## Notes for Content Management
-- Add specific experimental results and plasma measurements
-- Include detailed technical specifications of the probe
-- Add any publications or presentations related to this project
-- Update status and timeline as project progresses
-- Add team member information and NASA collaborators
-- Add any relevant research papers or references
-- Include information about the MUSE stellarator project context
+## Full Report
+For a comprehensive analysis of this project, including detailed technical specifications, experimental results, and academic writing, please see my complete SULI report: [PPPL SULI Report](../assets/WebsiteImages/PPPL_SULI_Report.pdf)

@@ -1,79 +1,115 @@
-# Training of Neural Network based on the Deformation of Sickle Cells using Computer Vision
+# Sickle Cell Detection and Tracking Dataset and System
 
 ## Project Overview
-**Title:** Training of Neural Network based on the Deformation of Sickle Cells using Computer Vision
+**Title:** Sickle Cell Detection and Tracking Dataset and System
 **Role:** Lead Developer
 **Duration:** Fall 2025
 **Institution:** University of Maryland Eastern Shore
-**Status:** [Add status - e.g., Completed, Ongoing, Planning]
+**Status:** Associated Publication in process
 
 ## Description
-Developing computer vision algorithms for automated detection and analysis of sickle cell disease in medical imaging.
+This project presents a complete pipeline for automated sickle cell identification and behavior analysis from microscopy images, encompassing dataset curation, annotation, segmentation, feature extraction, detection, and tracking. The system demonstrates high accuracy in distinguishing sickle versus normal cells and robust object tracking capabilities.
 
 ## Technologies Used
 - Computer Vision
 - Machine Learning
-- YOLO (You Only Look Once)
-- [Add additional technologies as needed - e.g., Python, OpenCV, TensorFlow, PyTorch]
+- YOLO12s (You Only Look Once)
+- OpenCV
+- Ultralytics (YOLO)
+- PyTorch & Torchvision
+- NumPy
+- Pillow
+- Matplotlib
+- Pandas
+- Cellpose
+- SciPy
+- tkinter
+- NVIDIA RTX 4060 GPU
+- Python
 
 ## Project Images
 **Main Image:** ../assets/WebsiteImages/SickleDetectionCover.png
 **Additional Images:**
-- [Add image path here - e.g., ../assets/WebsiteImages/sickle-cell-microscopy.jpg]
+- ../assets/WebsiteImages/Cell_Full_Image.png (Detection results showing bounding boxes and classification)
 - [Add image path here - e.g., ../assets/WebsiteImages/neural-network-architecture.png]
 - [Add image path here - e.g., ../assets/WebsiteImages/detection-results-comparison.png]
 
 ## Detailed Content
 
 ### Overview
-[Add detailed project overview about using computer vision and machine learning for sickle cell detection, including the medical significance and technical challenges]
+This project presents a complete pipeline for automated sickle cell identification and behavior analysis from microscopy images. The system addresses the critical need for automated detection of sickle cell disease, which affects millions worldwide and requires precise morphological analysis for accurate diagnosis. The technical challenges include handling variable cell shapes, overlapping cells, and maintaining high accuracy in medical applications.
 
 ### Objectives
-- [Add objective 1 - e.g., Develop accurate automated detection of sickle cell deformation]
-- [Add objective 2 - e.g., Train neural network for real-time analysis]
-- [Add objective 3 - e.g., Improve diagnostic accuracy and speed]
-- [Add additional objectives as needed]
+- Develop accurate automated detection of sickle cell deformation using computer vision
+- Create a comprehensive dataset with proper annotation for training and validation
+- Implement robust object tracking for temporal analysis of cell behavior
+- Achieve high precision and recall in distinguishing sickle vs normal erythrocytes
+- Build a complete pipeline from raw microscopy images to analysis results
 
 ### Technical Approach
-[Add detailed technical approach including:
-- Computer vision preprocessing techniques
-- Neural network architecture and training methodology
-- YOLO implementation for object detection
-- Data augmentation and validation strategies
-- Performance evaluation metrics]
+
+#### Dataset Preparation and Annotation
+The dataset comprises 4,462 grayscale microscopy images (3,540 training, 922 validation) annotated according to the YOLO object detection standard, distinguishing "sickle" (class 0) and "normal" (class 1) erythrocytes. Class distribution is balanced (42.4% sickle, 57.6% normal). Image dimensions range from 34×43 to 68×81 pixels. Annotation and data preparation were manually performed using custom Python tools adhering to YOLO formatting.
+
+#### Segmentation and Feature Extraction
+Segmentation employed the Cellpose model cpsam with auto-detected cell diameter, flow threshold 0.4, and probability threshold 0.0. Normalized grayscale images (OpenCV MINMAX) were used. Extracted features include geometric and intensity-based measures: area, perimeter, circularity, aspect ratio, major/minor axes, centroid, and pixel-level intensity statistics. The background is masked rather than subtracted.
+
+#### Object Detection – YOLO12s Model
+A YOLO12s detector was trained on an NVIDIA RTX 4060 GPU for 136 epochs (51.2 hours) using the AdamW optimizer and cosine learning-rate annealing (initial 0.001). Mixed precision training improved efficiency. Augmentations included minor rotations, scaling, translations, horizontal flips, HSV jitter, mosaic, mixup, copy-paste, randaugment, and random erasing (p=0.3).
+
+#### Cell Tracking and Temporal Analysis
+A custom Kalman-Hungarian tracker (state vector [x, y, w, h, vx, vy]) maintains object identities across frames. Data association weights centroid distance (70%) and IoU (30%), with maximum centroid distance 50 px and minimum IoU 0.1. Track management parameters: max_age = 15 frames, min_hits = 2. Outputs include per-cell CSV files with morphological, intensity, and classification metrics.
 
 ### Key Contributions
-- [Add your specific contributions to this project]
-- [Add additional contributions such as:
-  - Algorithm development and optimization
-  - Dataset preparation and annotation
-  - Model training and validation
-  - Performance analysis and improvement]
+- Developed complete end-to-end pipeline for sickle cell detection and tracking
+- Created comprehensive dataset of 4,462 annotated microscopy images with balanced class distribution
+- Implemented custom Kalman-Hungarian tracker for robust cell tracking across frames
+- Optimized YOLO12s model training with advanced augmentation strategies
+- Built custom Python tools for dataset annotation and visualization
+- Achieved state-of-the-art performance metrics in sickle cell classification
 
 ### Results
-[Add project results, findings, and outcomes including:
-- Detection accuracy achieved
-- Performance metrics and benchmarks
-- Clinical validation results
-- Comparison with existing methods]
+The YOLO12s model achieved exceptional performance metrics:
+- **mAP@0.5:** 0.9889 (peak 0.9894)
+- **Precision:** 95.76%
+- **Recall:** 97.05%
+- **Training Time:** 51.2 hours over 136 epochs on NVIDIA RTX 4060 GPU
+- **Dataset Size:** 4,462 images (3,540 training, 922 validation)
+- **Class Balance:** 42.4% sickle cells, 57.6% normal cells
+
+The system demonstrates high accuracy in distinguishing sickle versus normal cells and robust object tracking capabilities. The custom tracking algorithm successfully maintains cell identities across frames with optimized data association parameters.
+
+### Limitations
+The current system has several limitations that should be addressed:
+- Absence of real-time processing capabilities
+- Single-center image sources limiting generalizability
+- Missing acquisition metadata (microscope model, magnification, staining protocol)
+- No DICOM compatibility for clinical integration
+- Limited to grayscale microscopy images
 
 ### Future Work
-[Add future research directions and next steps for:
-- Model improvement and optimization
-- Clinical deployment considerations
-- Integration with medical imaging systems
-- Expansion to other blood cell disorders]
+Future research directions and next steps include:
+- Integration of multi-source datasets to improve generalizability
+- Implementation of standardized imaging protocols across different institutions
+- Development of DICOM compatibility for clinical deployment
+- Real-time processing optimization for clinical workflow integration
+- Expansion to other blood cell disorders and morphological abnormalities
+- Clinical validation studies with medical professionals
+- Integration with existing medical imaging systems and electronic health records
 
 ## Additional Information
 **Link to HTML page:** projects/sickle-cell-detection-project.html
-**Medical Application:** Automated sickle cell disease detection
+**Medical Application:** Automated sickle cell disease detection and tracking
+**Hardware Requirements:** NVIDIA RTX 4060 GPU or equivalent
+**Software Dependencies:** OpenCV, Ultralytics, PyTorch, Cellpose, NumPy, Pandas, Matplotlib, SciPy, tkinter
+
+## Software and Implementation
+Core dependencies include OpenCV, Ultralytics (YOLO), PyTorch & Torchvision, NumPy, Pillow, Matplotlib, Pandas, Cellpose, SciPy, and tkinter. Custom modules include the Kalman-Hungarian tracker, GUI for image/video input, and automated visualization pipeline. The system provides comprehensive analysis outputs including per-cell CSV files with morphological, intensity, and classification metrics.
 
 ## Notes for Content Management
-- Add specific performance metrics and accuracy results
-- Include detailed technical specifications of the neural network
-- Add any publications or presentations related to this project
-- Update status and timeline as project progresses
-- Add team member information if applicable
-- Add any relevant research papers or medical references
-- Include information about dataset size and characteristics
-- Add information about clinical validation or testing
+- Project completed with comprehensive technical documentation
+- All performance metrics and accuracy results documented
+- Detailed technical specifications of YOLO12s neural network included
+- Dataset characteristics and training parameters fully specified
+- Custom tracking algorithm implementation documented
+- Future work and limitations clearly outlined for continued development
