@@ -11,8 +11,7 @@
 Advanced rotational dynamics analysis for aerospace applications, developing comprehensive mathematical models and computational tools for spacecraft stability and control systems.
 
 ## Technologies Used
-- MATLAB
-- Simulink
+-Fusion 360
 - Python
 - Control Systems
 - Aerospace Engineering
