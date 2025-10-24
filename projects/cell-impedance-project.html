@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cell Impedance Project - Briggs Pugner</title>
+    <title>AI-assisted Imaging Flow Cytometry (AIFC) - Briggs Pugner</title>
     <link rel="stylesheet" href="../styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -109,8 +109,8 @@
                 <i class="fas fa-arrow-left"></i>
                 Back to Portfolio
             </a>
-            <h1>Cell Impedance Project</h1>
-            <p>Biomedical Diagnostics & Electrical Characterization</p>
+            <h1>AI-assisted Imaging Flow Cytometry (AIFC)</h1>
+            <p>Blood Cell Classification & Electrical Impedance Analysis</p>
         </div>
     </div>
 
@@ -131,101 +131,131 @@
                 </div>
                 <div class="meta-item">
                     <h4>Status</h4>
-                    <p>Ongoing</p>
+                    <p>Completed</p>
                 </div>
             </div>
         </div>
 
         <div class="project-section">
             <h2>Project Overview</h2>
-            <p>The Cell Impedance Project investigates the electrical impedance characteristics of biological cells for medical diagnostics and research applications. This interdisciplinary research combines electrical engineering principles with biomedical sciences to develop novel diagnostic tools and understand cellular behavior under various conditions.</p>
+            <p>Blood cell heterogeneity and activation play crucial roles in inflammatory responses and immune disorders. Variations in morphology, mechanical properties, and biochemical composition serve as key indicators of these conditions. This research presents an AI-assisted imaging flow cytometry (AIFC) system designed for real-time blood cell classification. Utilizing a pretrained AI model, the system automatically detects and categorizes blood cells from microscopy images while simultaneously measuring cell velocity based on pixel displacement and frame rate. To enhance precision and control, the velocity data feeds into a closed-loop system that dynamically adjusts a custom syringe pump to regulate flow conditions. Additionally, single-cell mechanical properties are extracted by analyzing deformation behavior through constitutive modeling. By integrating AI-driven classification with adaptive fluidic control and electrical impedance measurements, this next-generation AIFC system provides a high-throughput, automated platform for precise single-cell analysis.</p>
             
             <div class="project-image" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
                 <img src="../assets/WebsiteImages/cell_impedance.png" alt="Cell Impedance Project" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;">
-                <img src="../assets/WebsiteImages/UMES_Symposium.jpg" alt="UMES Symposium" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;">
+                <img src="../assets/WebsiteImages/Cell_Full_Image.png" alt="Cell Analysis" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;">
             </div>
         </div>
 
         <div class="project-section">
             <h2>Research Objectives</h2>
             <ul>
-                <li>Characterize electrical impedance properties of different cell types</li>
-                <li>Develop measurement techniques for accurate impedance analysis</li>
-                <li>Investigate the relationship between cell health and impedance characteristics</li>
-                <li>Design and optimize impedance measurement systems</li>
-                <li>Explore applications in medical diagnostics and drug testing</li>
+                <li>Develop an adaptive flow control system for precise cell positioning and velocity management</li>
+                <li>Implement AI-assisted image analysis using pretrained models for automated cell detection and classification</li>
+                <li>Train a YOLOv8-based neural network for high-accuracy RBC and WBC classification</li>
+                <li>Create a closed-loop system integrating flow control with real-time imaging feedback</li>
+                <li>Extract single-cell mechanical properties through deformation behavior analysis</li>
+                <li>Implement electrical impedance measurements using Eclypse Z7 FPGA board with digitizer and AWG modules</li>
+                <li>Correlate electrical impedance properties with cell classification types for enhanced diagnostic accuracy</li>
+                <li>Achieve high-throughput automated classification suitable for clinical diagnostics</li>
+                <li>Enable diagnosis of hemolytic diseases, immune disorders, and blood-related conditions</li>
             </ul>
         </div>
 
         <div class="project-section">
             <h2>Technical Approach</h2>
-            <h3>Impedance Spectroscopy</h3>
-            <p>Utilizing electrical impedance spectroscopy to measure the complex impedance of biological cells across a range of frequencies, providing insights into cellular structure and function.</p>
             
-            <h3>Microelectrode Design</h3>
-            <p>Design and fabrication of microelectrode arrays for precise electrical measurements of individual cells and cell populations.</p>
+            <h3>Adaptive Flow Control</h3>
+            <p>A custom microfluidic chip enables precise control of cell position and velocity using a closed-loop system with real-time feedback from imaging data. The system continuously monitors cell flow and adjusts parameters to maintain optimal conditions for imaging and analysis.</p>
             
-            <h3>Signal Processing</h3>
-            <p>Advanced signal processing techniques to extract meaningful information from impedance measurements and distinguish between different cell states.</p>
+            <h3>AI-Assisted Image Analysis</h3>
+            <p>Utilizing a pretrained AI model, the system automatically detects and categorizes blood cells from microscopy images. Individual cells are detected and annotated manually with Label Studio software for training data preparation. These annotated cells are segmented and labeled as RBCs or WBCs for training the neural network, ensuring high-quality training data for accurate classification.</p>
+            
+            <h3>Neural Network Classification</h3>
+            <p>The cell images train a YOLOv8-based neural network for automated cell classification. Training data was split into a training set and validation set to assess model performance, with precision for RBC classification reaching 0.943 and WBC classification achieving 0.706.</p>
+            
+            <h3>Closed-loop Velocity Measurement</h3>
+            <p>Cell velocity is assessed by analyzing pixel displacement across frames and frame rate, with the velocity data feeding into a closed-loop system that dynamically adjusts a custom syringe pump to regulate flow conditions. This ensures consistent imaging conditions and optimal analysis results.</p>
+            
+            <h3>Electrical Impedance Measurement System</h3>
+            <p>The system utilizes an Eclypse Z7 FPGA development board equipped with digitizer and arbitrary waveform generator (AWG) modules to perform precise electrical impedance measurements. A custom electrical circuit connects to a microfluidic channel with integrated electrodes at the base, enabling real-time impedance characterization of individual cells as they flow through the measurement zone. The AWG module generates controlled electrical signals across a range of frequencies while the digitizer captures the response, allowing for comprehensive impedance spectroscopy analysis.</p>
+            
+            <h3>Mechanical Properties Analysis</h3>
+            <p>Single-cell mechanical properties are extracted by analyzing deformation behavior through constitutive modeling. This analysis provides insights into cell stiffness, elasticity, and other mechanical characteristics that serve as key indicators of cell health and activation states.</p>
+            
+            <h3>Electrical-Classification Correlation</h3>
+            <p>The electrical impedance measurements are correlated with AI-assisted cell classification to establish relationships between electrical properties and cell types. This dual-parameter approach enhances diagnostic accuracy by combining morphological, mechanical, and electrical characteristics for comprehensive cell analysis.</p>
         </div>
 
         <div class="project-section">
             <h2>Technologies & Tools</h2>
             <div class="tech-stack">
-                <span class="tech-tag">Electronics</span>
-                <span class="tech-tag">Biomedical Engineering</span>
-                <span class="tech-tag">Signal Processing</span>
-                <span class="tech-tag">Impedance Spectroscopy</span>
+                <span class="tech-tag">Microfluidics</span>
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">Machine Learning (YOLOv8)</span>
+                <span class="tech-tag">Neural Networks</span>
+                <span class="tech-tag">Image Processing</span>
+                <span class="tech-tag">Adaptive Flow Control</span>
+                <span class="tech-tag">Real-time Feedback Systems</span>
+                <span class="tech-tag">Label Studio</span>
+                <span class="tech-tag">Constitutive Modeling</span>
+                <span class="tech-tag">Mechanical Properties Analysis</span>
+                <span class="tech-tag">Pretrained AI Models</span>
+                <span class="tech-tag">Pixel Displacement Analysis</span>
+                <span class="tech-tag">FPGA (Eclypse Z7)</span>
+                <span class="tech-tag">Digitizer Module</span>
+                <span class="tech-tag">AWG Module</span>
+                <span class="tech-tag">Electrical Impedance Spectroscopy</span>
                 <span class="tech-tag">Microelectrode Arrays</span>
-                <span class="tech-tag">Data Analysis</span>
-                <span class="tech-tag">LabVIEW</span>
+                <span class="tech-tag">Electrical Circuit Design</span>
             </div>
         </div>
 
         <div class="project-section">
             <h2>Key Contributions</h2>
             <ul>
-                <li>Designed and implemented impedance measurement circuits</li>
-                <li>Developed data acquisition systems for real-time impedance monitoring</li>
-                <li>Built back and frontend of a python program for control of syringe pump, microscope image, real-time lightweight computer vision model to identify and classify different cell types, cell velocities, cell position prediction, and cell control on a micron scale</li>
-                <li>Conducted experiments with various cell types and conditions</li>
-                <li>Analyzed impedance data to identify characteristic patterns</li>
-                <li>Collaborated with biomedical researchers on experimental protocols</li>
-                <li>Contributed to system optimization and calibration procedures</li>
+                <li>Developed an integrated AIFC system combining microfluidic control with computer vision and electrical impedance measurements</li>
+                <li>Implemented adaptive flow control with real-time feedback for optimal cell imaging</li>
+                <li>Utilized pretrained AI models for enhanced cell detection and classification accuracy</li>
+                <li>Trained and optimized YOLOv8 neural network for automated blood cell classification</li>
+                <li>Achieved high precision classification (RBC: 0.943, WBC: 0.706) suitable for clinical applications</li>
+                <li>Created a closed-loop system enabling autonomous cell analysis in flow conditions</li>
+                <li>Implemented electrical impedance measurement system using Eclypse Z7 FPGA board with digitizer and AWG modules</li>
+                <li>Established correlations between electrical impedance properties and cell classification types</li>
+                <li>Implemented mechanical properties analysis through constitutive modeling</li>
+                <li>Enabled diagnosis of hemolytic diseases, immune disorders, and blood-related conditions through multi-parameter analysis</li>
             </ul>
         </div>
 
         <div class="project-section">
-            <h2>Applications</h2>
-            <h3>Medical Diagnostics</h3>
-            <p>Potential applications in non-invasive cell health monitoring and early disease detection through impedance-based biomarkers.</p>
-            
-            <h3>Drug Testing</h3>
-            <p>Real-time monitoring of cellular responses to pharmaceutical compounds for drug development and toxicity testing.</p>
-            
-            <h3>Research Tools</h3>
-            <p>Advanced instrumentation for fundamental research in cell biology and biophysics.</p>
-        </div>
-
-        <div class="project-section">
             <h2>Results & Impact</h2>
-            <p>This research contributes to the development of novel diagnostic tools that could revolutionize medical testing by providing:</p>
+            <p>The AI-assisted system accurately classified cells during flow conditions, maintaining high precision for both RBCs and WBCs. The integrated approach significantly increases efficiency and accuracy of cell classification, making it suitable for point-of-care and diagnostic laboratory applications. The system successfully demonstrates the potential for automated blood cell analysis in clinical settings. Additionally, the mechanical properties analysis provides valuable insights into cell deformation behavior, enabling characterization of cell stiffness and elasticity as indicators of cell health and activation states. The electrical impedance measurements using the Eclypse Z7 FPGA board with digitizer and AWG modules successfully captured distinct electrical signatures for different cell types, providing an additional classification parameter that correlates with the AI-based morphological analysis.</p>
+            
+            <p>The system represents a significant advancement in automated cell analysis, providing:</p>
             <ul>
-                <li>Non-invasive cell health assessment</li>
-                <li>Real-time monitoring capabilities</li>
-                <li>High-throughput screening potential</li>
-                <li>Cost-effective diagnostic solutions</li>
+                <li>Real-time classification capabilities using pretrained AI models</li>
+                <li>High-throughput processing suitable for clinical workflows</li>
+                <li>Improved accuracy compared to traditional manual methods</li>
+                <li>Mechanical properties analysis for comprehensive cell characterization</li>
+                <li>Electrical impedance measurements for additional cell characterization parameters</li>
+                <li>Multi-parameter analysis combining morphological, mechanical, and electrical properties</li>
+                <li>Potential for point-of-care diagnostic applications</li>
+                <li>Enhanced understanding of blood cell heterogeneity and activation states</li>
             </ul>
         </div>
 
         <div class="project-section">
             <h2>Future Work</h2>
-            <p>The project continues to explore advanced measurement techniques and expand applications. Future research directions include:</p>
+            <p>Future extensions include refining subcategory identification within WBCs, such as distinguishing T-cells and B-cells. Additional research directions include:</p>
             <ul>
-                <li>Integration with microfluidic systems</li>
-                <li>Machine learning for automated cell classification</li>
-                <li>Clinical validation studies</li>
-                <li>Development of portable diagnostic devices</li>
+                <li>Expanding the system to analyze other cell types beyond blood cells</li>
+                <li>Improving classification accuracy for WBC subcategories</li>
+                <li>Enhancing mechanical properties analysis for more detailed cell characterization</li>
+                <li>Optimizing electrical impedance measurement protocols for improved sensitivity and specificity</li>
+                <li>Developing machine learning algorithms to better correlate electrical impedance signatures with cell types</li>
+                <li>Expanding impedance spectroscopy to cover broader frequency ranges for comprehensive electrical characterization</li>
+                <li>Developing portable versions for point-of-care applications</li>
+                <li>Integrating with existing clinical laboratory information systems</li>
+                <li>Exploring applications in inflammatory response monitoring and immune disorder diagnosis</li>
             </ul>
         </div>
     </div>

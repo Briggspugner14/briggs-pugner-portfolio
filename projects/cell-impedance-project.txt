@@ -24,6 +24,12 @@ Blood cell heterogeneity and activation play crucial roles in inflammatory respo
 - Mechanical Properties Analysis
 - Pretrained AI Models
 - Pixel Displacement Analysis
+- FPGA (Eclypse Z7)
+- Digitizer Module
+- AWG (Arbitrary Waveform Generator) Module
+- Electrical Impedance Spectroscopy
+- Microelectrode Arrays
+- Electrical Circuit Design
 
 ## Project Images
 **Main Image:** ../assets/WebsiteImages/cell_impedance.png
@@ -43,6 +49,8 @@ The AIFC system represents a breakthrough in automated blood cell analysis, comb
 - Train a YOLOv8-based neural network for high-accuracy RBC and WBC classification
 - Create a closed-loop system integrating flow control with real-time imaging feedback
 - Extract single-cell mechanical properties through deformation behavior analysis
+- Implement electrical impedance measurements using Eclypse Z7 FPGA board with digitizer and AWG modules
+- Correlate electrical impedance properties with cell classification types for enhanced diagnostic accuracy
 - Achieve high-throughput automated classification suitable for clinical diagnostics
 - Enable diagnosis of hemolytic diseases, immune disorders, and blood-related conditions
 
@@ -60,21 +68,29 @@ The cell images train a YOLOv8-based neural network for automated cell classific
 #### Closed-loop Velocity Measurement
 Cell velocity is assessed by analyzing pixel displacement across frames and frame rate, with the velocity data feeding into a closed-loop system that dynamically adjusts a custom syringe pump to regulate flow conditions. This ensures consistent imaging conditions and optimal analysis results.
 
+#### Electrical Impedance Measurement System
+The system utilizes an Eclypse Z7 FPGA development board equipped with digitizer and arbitrary waveform generator (AWG) modules to perform precise electrical impedance measurements. A custom electrical circuit connects to a microfluidic channel with integrated electrodes at the base, enabling real-time impedance characterization of individual cells as they flow through the measurement zone. The AWG module generates controlled electrical signals across a range of frequencies while the digitizer captures the response, allowing for comprehensive impedance spectroscopy analysis.
+
 #### Mechanical Properties Analysis
 Single-cell mechanical properties are extracted by analyzing deformation behavior through constitutive modeling. This analysis provides insights into cell stiffness, elasticity, and other mechanical characteristics that serve as key indicators of cell health and activation states.
 
+#### Electrical-Classification Correlation
+The electrical impedance measurements are correlated with AI-assisted cell classification to establish relationships between electrical properties and cell types. This dual-parameter approach enhances diagnostic accuracy by combining morphological, mechanical, and electrical characteristics for comprehensive cell analysis.
+
 ### Key Contributions
-- Developed an integrated AIFC system combining microfluidic control with computer vision
+- Developed an integrated AIFC system combining microfluidic control with computer vision and electrical impedance measurements
 - Implemented adaptive flow control with real-time feedback for optimal cell imaging
 - Utilized pretrained AI models for enhanced cell detection and classification accuracy
 - Trained and optimized YOLOv8 neural network for automated blood cell classification
 - Achieved high precision classification (RBC: 0.943, WBC: 0.706) suitable for clinical applications
 - Created a closed-loop system enabling autonomous cell analysis in flow conditions
+- Implemented electrical impedance measurement system using Eclypse Z7 FPGA board with digitizer and AWG modules
+- Established correlations between electrical impedance properties and cell classification types
 - Implemented mechanical properties analysis through constitutive modeling
-- Enabled diagnosis of hemolytic diseases, immune disorders, and blood-related conditions
+- Enabled diagnosis of hemolytic diseases, immune disorders, and blood-related conditions through multi-parameter analysis
 
 ### Results
-The AI-assisted system accurately classified cells during flow conditions, maintaining high precision for both RBCs and WBCs. The integrated approach significantly increases efficiency and accuracy of cell classification, making it suitable for point-of-care and diagnostic laboratory applications. The system successfully demonstrates the potential for automated blood cell analysis in clinical settings. Additionally, the mechanical properties analysis provides valuable insights into cell deformation behavior, enabling characterization of cell stiffness and elasticity as indicators of cell health and activation states.
+The AI-assisted system accurately classified cells during flow conditions, maintaining high precision for both RBCs and WBCs. The integrated approach significantly increases efficiency and accuracy of cell classification, making it suitable for point-of-care and diagnostic laboratory applications. The system successfully demonstrates the potential for automated blood cell analysis in clinical settings. Additionally, the mechanical properties analysis provides valuable insights into cell deformation behavior, enabling characterization of cell stiffness and elasticity as indicators of cell health and activation states. The electrical impedance measurements using the Eclypse Z7 FPGA board with digitizer and AWG modules successfully captured distinct electrical signatures for different cell types, providing an additional classification parameter that correlates with the AI-based morphological analysis.
 
 ### Discussion and Conclusions
 The AIFC framework successfully combines microfluidic control with advanced computer vision to autonomously classify blood cells in suspension. This method supports enhanced diagnostics for blood cancers, autoimmune diseases, hemolytic diseases, and immune disorders, and has the potential for broader application in evaluating diverse cell types and blood-related conditions.
@@ -84,6 +100,8 @@ The system represents a significant advancement in automated cell analysis, prov
 - High-throughput processing suitable for clinical workflows
 - Improved accuracy compared to traditional manual methods
 - Mechanical properties analysis for comprehensive cell characterization
+- Electrical impedance measurements for additional cell characterization parameters
+- Multi-parameter analysis combining morphological, mechanical, and electrical properties
 - Potential for point-of-care diagnostic applications
 - Enhanced understanding of blood cell heterogeneity and activation states
 
@@ -92,6 +110,9 @@ Future extensions include refining subcategory identification within WBCs, such 
 - Expanding the system to analyze other cell types beyond blood cells
 - Improving classification accuracy for WBC subcategories
 - Enhancing mechanical properties analysis for more detailed cell characterization
+- Optimizing electrical impedance measurement protocols for improved sensitivity and specificity
+- Developing machine learning algorithms to better correlate electrical impedance signatures with cell types
+- Expanding impedance spectroscopy to cover broader frequency ranges for comprehensive electrical characterization
 - Developing portable versions for point-of-care applications
 - Integrating with existing clinical laboratory information systems
 - Exploring applications in inflammatory response monitoring and immune disorder diagnosis
@@ -109,8 +130,10 @@ The system and methodology are based on recent advances cited in:
 ## Notes for Content Management
 - Project completed with successful demonstration of AIFC system
 - High precision achieved for both RBC (0.943) and WBC (0.706) classification
-- System integrates pretrained AI models with mechanical properties analysis
+- System integrates pretrained AI models with mechanical properties analysis and electrical impedance measurements
+- Eclypse Z7 FPGA board with digitizer and AWG modules successfully implemented for electrical characterization
+- Electrical impedance measurements provide additional classification parameters correlating with cell types
 - Applications include hemolytic diseases, immune disorders, and blood-related conditions
 - System ready for clinical validation and potential commercialization
-- Future work focuses on WBC subcategory identification, mechanical analysis enhancement, and system portability
+- Future work focuses on WBC subcategory identification, mechanical analysis enhancement, electrical impedance optimization, and system portability
 - Research contributes to automated diagnostic technologies for blood disorders and inflammatory response monitoring
