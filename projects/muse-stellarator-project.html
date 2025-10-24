@@ -150,11 +150,31 @@
         </div>
 
         <div class="project-section">
-            <h2>Project Overview</h2>
-            <p>The Mirror Langmuir Probe project is part of the MUSE (Modular Stellarator Experiment) compact stellarator research initiative in collaboration with NASA. This cutting-edge project focuses on developing advanced plasma diagnostic tools for fusion energy research, specifically designing and implementing mirror Langmuir probes to measure plasma parameters in the stellarator environment.</p>
+            <h2>Abstract</h2>
+            <p>Accurate and time-resolved measurements of plasma parameters are critical for understanding the dynamics of magnetic confinement devices. In the MUSE compact stellarator, the need for precise diagnostics is addressed using a high-time-resolution system based on the Mirror Langmuir Probe (MLP). Unlike conventional Langmuir probes, which sweep across a wide range of bias voltages, the MLP rapidly cycles through pre-selected voltages to extract electron temperature (Te), electron density (ne), and floating potential (Vf) from a single probe tip. This rapid cycling enables spatially and temporally localized measurements, essential for studying transient events in the core, edge, and scrape-off layer (SOL) regions.</p>
+            
+            <p>The MLP system was implemented using a field-programmable gate array (FPGA), following the approach described by Vincent et al. [1]. During this internship project, the focus was on ensuring robust control and data acquisition software, diagnosing and resolving errors, and rebuilding the code within a Linux virtual machine using the Koheron make system. The FPGA implementation was subsequently deployed to hardware, and the system was integrated into the MUSE experimental platform. These efforts establish a foundation for high-fidelity measurements of transient plasma dynamics and demonstrate the feasibility of FPGA-based, high-speed diagnostics in stellarator research.</p>
             
             <div class="project-image">
                 <img src="../assets/WebsiteImages/MLP_Blk_Diagram.png" alt="Mirror Langmuir Probe Block Diagram" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Project Poster</h2>
+            <div class="project-image">
+                <img src="../assets/WebsiteImages/SULI_Poster.png" alt="SULI Program Poster - High-Speed Plasma Diagnostics Using a Mirror Langmuir Probe on the MUSE Compact Stellarator" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+            <p style="text-align: center; font-style: italic; margin-top: 1rem;">High-Speed Plasma Diagnostics Using a Mirror Langmuir Probe on the MUSE Compact Stellarator - SULI Program Poster</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Full Report</h2>
+            <p>For a comprehensive analysis of this project, including detailed technical specifications, experimental results, and academic writing, please see my complete SULI report:</p>
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="../assets/WebsiteImages/PPPL_SULI_Report.pdf" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: white; padding: 1rem 2rem; border-radius: 10px; text-decoration: none; font-weight: 600; transition: transform 0.3s ease;">
+                    <i class="fas fa-file-pdf"></i> View PPPL SULI Report
+                </a>
             </div>
         </div>
 
