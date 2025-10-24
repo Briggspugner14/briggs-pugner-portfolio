@@ -116,8 +116,8 @@
                 <i class="fas fa-arrow-left"></i>
                 Back to Portfolio
             </a>
-            <h1>Training of Neural Network based on the Deformation of Sickle Cells using computer vision</h1>
-            <p>AI-Powered Medical Imaging & Automated Diagnosis</p>
+            <h1>Sickle Cell Detection and Tracking Dataset and System</h1>
+            <p>Complete Pipeline for Automated Sickle Cell Identification and Behavior Analysis</p>
         </div>
     </div>
 
@@ -126,7 +126,7 @@
             <div class="meta-grid">
                 <div class="meta-item">
                     <h4>Duration</h4>
-                    <p>2025</p>
+                    <p>Fall 2025</p>
                 </div>
                 <div class="meta-item">
                     <h4>Role</h4>
@@ -138,45 +138,44 @@
                 </div>
                 <div class="meta-item">
                     <h4>Status</h4>
-                    <p>Ongoing</p>
+                    <p>Associated Publication in process</p>
                 </div>
             </div>
         </div>
 
         <div class="project-section">
             <h2>Project Overview</h2>
-            <p>The Sickle Cell Detection project leverages computer vision and machine learning algorithms to automate the detection and analysis of sickle cell disease in medical imaging. This innovative approach aims to improve diagnostic accuracy, reduce analysis time, and make sickle cell screening more accessible in resource-limited settings.</p>
+            <p>This project presents a complete pipeline for automated sickle cell identification and behavior analysis from microscopy images, encompassing dataset curation, annotation, segmentation, feature extraction, detection, and tracking. The system addresses the critical need for automated detection of sickle cell disease, which affects millions worldwide and requires precise morphological analysis for accurate diagnosis.</p>
             
             <div class="project-image">
-                <i class="fas fa-eye" style="font-size: 4rem; color: #2563eb;"></i>
+                <img src="../assets/WebsiteImages/Cell_Full_Image.png" alt="Sickle Cell Detection Results" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
             </div>
         </div>
 
         <div class="project-section">
             <h2>Research Objectives</h2>
             <ul>
-                <li>Develop computer vision algorithms for automated sickle cell detection</li>
-                <li>Create machine learning models for cell classification and analysis</li>
-                <li>Optimize image processing techniques for medical microscopy</li>
-                <li>Validate diagnostic accuracy against expert medical analysis</li>
-                <li>Design user-friendly interface for medical professionals</li>
-                <li>Explore potential for point-of-care diagnostic applications</li>
+                <li>Develop accurate automated detection of sickle cell deformation using computer vision</li>
+                <li>Create a comprehensive dataset with proper annotation for training and validation</li>
+                <li>Implement robust object tracking for temporal analysis of cell behavior</li>
+                <li>Achieve high precision and recall in distinguishing sickle vs normal erythrocytes</li>
+                <li>Build a complete pipeline from raw microscopy images to analysis results</li>
             </ul>
         </div>
 
         <div class="project-section">
             <h2>Technical Approach</h2>
-            <h3>Image Preprocessing</h3>
-            <p>Advanced image preprocessing techniques including noise reduction, contrast enhancement, and normalization to optimize blood cell images for analysis.</p>
+            <h3>Dataset Preparation and Annotation</h3>
+            <p>The dataset comprises 4,462 grayscale microscopy images (3,540 training, 922 validation) annotated according to the YOLO object detection standard, distinguishing "sickle" (class 0) and "normal" (class 1) erythrocytes. Class distribution is balanced (42.4% sickle, 57.6% normal). Image dimensions range from 34×43 to 68×81 pixels.</p>
             
-            <h3>Feature Extraction</h3>
-            <p>Development of robust feature extraction algorithms to identify key morphological characteristics of sickle cells, including shape, size, and texture analysis.</p>
+            <h3>Segmentation and Feature Extraction</h3>
+            <p>Segmentation employed the Cellpose model cpsam with auto-detected cell diameter, flow threshold 0.4, and probability threshold 0.0. Normalized grayscale images (OpenCV MINMAX) were used. Extracted features include geometric and intensity-based measures: area, perimeter, circularity, aspect ratio, major/minor axes, centroid, and pixel-level intensity statistics.</p>
             
-            <h3>Machine Learning Classification</h3>
-            <p>Implementation of supervised learning algorithms to classify cells as normal or sickle-shaped with high accuracy and reliability.</p>
+            <h3>Object Detection – YOLO12s Model</h3>
+            <p>A YOLO12s detector was trained on an NVIDIA RTX 4060 GPU for 136 epochs (51.2 hours) using the AdamW optimizer and cosine learning-rate annealing (initial 0.001). Mixed precision training improved efficiency. Augmentations included minor rotations, scaling, translations, horizontal flips, HSV jitter, mosaic, mixup, copy-paste, randaugment, and random erasing (p=0.3).</p>
             
-            <h3>Deep Learning Integration</h3>
-            <p>Exploration of convolutional neural networks (CNNs) for automated feature learning and improved classification performance.</p>
+            <h3>Cell Tracking and Temporal Analysis</h3>
+            <p>A custom Kalman-Hungarian tracker (state vector [x, y, w, h, vx, vy]) maintains object identities across frames. Data association weights centroid distance (70%) and IoU (30%), with maximum centroid distance 50 px and minimum IoU 0.1. Track management parameters: max_age = 15 frames, min_hits = 2.</p>
         </div>
 
         <div class="project-section">
@@ -184,100 +183,79 @@
             <div class="tech-stack">
                 <span class="tech-tag">Computer Vision</span>
                 <span class="tech-tag">Machine Learning</span>
-                <span class="tech-tag">Medical Imaging</span>
-                <span class="tech-tag">Python</span>
+                <span class="tech-tag">YOLO12s</span>
                 <span class="tech-tag">OpenCV</span>
-                <span class="tech-tag">TensorFlow</span>
-                <span class="tech-tag">YOLO</span>
-                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">Ultralytics</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Cellpose</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">SciPy</span>
+                <span class="tech-tag">NVIDIA RTX 4060</span>
+                <span class="tech-tag">Python</span>
             </div>
         </div>
 
         <div class="project-section">
             <h2>Key Contributions</h2>
             <ul>
-                <li>Designed and implemented computer vision algorithms for cell detection</li>
-                <li>Developed machine learning models for automated classification</li>
-                <li>Created image preprocessing pipelines for medical microscopy</li>
-                <li>Conducted extensive testing and validation with medical datasets</li>
-                <li>Optimized algorithms for real-time processing capabilities</li>
-                <li>Collaborated with medical professionals for clinical validation</li>
-                <li>Documented technical specifications and performance metrics</li>
+                <li>Developed complete end-to-end pipeline for sickle cell detection and tracking</li>
+                <li>Created comprehensive dataset of 4,462 annotated microscopy images with balanced class distribution</li>
+                <li>Implemented custom Kalman-Hungarian tracker for robust cell tracking across frames</li>
+                <li>Optimized YOLO12s model training with advanced augmentation strategies</li>
+                <li>Built custom Python tools for dataset annotation and visualization</li>
+                <li>Achieved state-of-the-art performance metrics in sickle cell classification</li>
             </ul>
         </div>
 
-        <div class="project-section">
-            <h2>Medical Impact</h2>
-            <div class="impact-box">
-                <h3><i class="fas fa-heartbeat"></i> Healthcare Applications</h3>
-                <p>This technology has the potential to revolutionize sickle cell disease diagnosis by providing:</p>
-                <ul>
-                    <li>Faster and more accurate screening</li>
-                    <li>Reduced dependency on expert pathologists</li>
-                    <li>Improved accessibility in underserved areas</li>
-                    <li>Standardized diagnostic criteria</li>
-                    <li>Cost-effective screening solutions</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="project-section">
-            <h2>Algorithm Development</h2>
-            <h3>Cell Segmentation</h3>
-            <p>Advanced segmentation algorithms to isolate individual blood cells from microscopy images, handling various cell densities and image qualities.</p>
-            
-            <h3>Morphological Analysis</h3>
-            <p>Comprehensive analysis of cell morphology including shape descriptors, aspect ratios, and edge detection to identify sickle cell characteristics.</p>
-            
-            <h3>Classification Pipeline</h3>
-            <p>Multi-stage classification system combining traditional computer vision techniques with modern machine learning approaches for robust detection.</p>
-        </div>
-
-        <div class="project-section">
-            <h2>Validation & Testing</h2>
-            <ul>
-                <li>Extensive testing with diverse medical imaging datasets</li>
-                <li>Cross-validation with expert pathologist annotations</li>
-                <li>Performance evaluation using standard medical imaging metrics</li>
-                <li>Sensitivity and specificity analysis for clinical relevance</li>
-                <li>Robustness testing across different imaging conditions</li>
-            </ul>
-        </div>
 
         <div class="project-section">
             <h2>Results & Performance</h2>
-            <p>Preliminary results demonstrate significant potential for clinical application:</p>
+            <p>The YOLO12s model achieved exceptional performance metrics:</p>
             <ul>
-                <li>High accuracy in sickle cell detection (>90% in initial tests)</li>
-                <li>Fast processing times suitable for real-time analysis</li>
-                <li>Robust performance across different image qualities</li>
-                <li>Consistent results with expert medical analysis</li>
+                <li><strong>mAP@0.5:</strong> 0.9889 (peak 0.9894)</li>
+                <li><strong>Precision:</strong> 95.76%</li>
+                <li><strong>Recall:</strong> 97.05%</li>
+                <li><strong>Training Time:</strong> 51.2 hours over 136 epochs on NVIDIA RTX 4060 GPU</li>
+                <li><strong>Dataset Size:</strong> 4,462 images (3,540 training, 922 validation)</li>
+                <li><strong>Class Balance:</strong> 42.4% sickle cells, 57.6% normal cells</li>
+            </ul>
+            <p>The system demonstrates high accuracy in distinguishing sickle versus normal cells and robust object tracking capabilities. The custom tracking algorithm successfully maintains cell identities across frames with optimized data association parameters.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Limitations</h2>
+            <p>The current system has several limitations that should be addressed:</p>
+            <ul>
+                <li>Absence of real-time processing capabilities</li>
+                <li>Single-center image sources limiting generalizability</li>
+                <li>Missing acquisition metadata (microscope model, magnification, staining protocol)</li>
+                <li>No DICOM compatibility for clinical integration</li>
+                <li>Limited to grayscale microscopy images</li>
             </ul>
         </div>
 
         <div class="project-section">
             <h2>Future Work</h2>
-            <p>The project continues to advance with several exciting directions:</p>
+            <p>Future research directions and next steps include:</p>
             <ul>
-                <li>Integration with mobile devices for point-of-care testing</li>
-                <li>Expansion to other blood cell disorders</li>
-                <li>Development of cloud-based diagnostic services</li>
-                <li>Clinical trials and regulatory approval processes</li>
-                <li>Partnership with medical device manufacturers</li>
-                <li>International deployment in resource-limited settings</li>
+                <li>Integration of multi-source datasets to improve generalizability</li>
+                <li>Implementation of standardized imaging protocols across different institutions</li>
+                <li>Development of DICOM compatibility for clinical deployment</li>
+                <li>Real-time processing optimization for clinical workflow integration</li>
+                <li>Expansion to other blood cell disorders and morphological abnormalities</li>
+                <li>Clinical validation studies with medical professionals</li>
+                <li>Integration with existing medical imaging systems and electronic health records</li>
             </ul>
         </div>
 
         <div class="project-section">
-            <h2>Social Impact</h2>
-            <p>This project addresses critical healthcare challenges:</p>
-            <ul>
-                <li>Improves access to sickle cell screening in underserved communities</li>
-                <li>Reduces healthcare costs through automated diagnosis</li>
-                <li>Supports early detection and treatment of sickle cell disease</li>
-                <li>Contributes to global health equity initiatives</li>
-                <li>Advances the field of medical AI and computer vision</li>
-            </ul>
+            <h2>Software and Implementation</h2>
+            <p>Core dependencies include OpenCV, Ultralytics (YOLO), PyTorch & Torchvision, NumPy, Pillow, Matplotlib, Pandas, Cellpose, SciPy, and tkinter. Custom modules include the Kalman-Hungarian tracker, GUI for image/video input, and automated visualization pipeline. The system provides comprehensive analysis outputs including per-cell CSV files with morphological, intensity, and classification metrics.</p>
+            
+            <h3>Hardware Requirements</h3>
+            <p>NVIDIA RTX 4060 GPU or equivalent for optimal training performance. The system is designed to run on standard computing hardware with GPU acceleration for deep learning model training and inference.</p>
         </div>
     </div>
 
