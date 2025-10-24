@@ -155,7 +155,7 @@
                 Back to Portfolio
             </a>
             <h1>Moments of Inertia in 3-Axis for Spaceflight Objects</h1>
-            <p class="subtitle">Advanced Rotational Dynamics Analysis for Aerospace Applications</p>
+            <p class="subtitle">Experimental Analysis Using Angular Acceleration Measurements</p>
             
             <div class="project-meta">
                 <div class="meta-item">
@@ -177,76 +177,99 @@
     <div class="project-container">
         <div class="project-section">
             <h2>Project Overview</h2>
-            <p>The Moments of Inertia in 3-Axis for Spaceflight Objects project focuses on developing comprehensive mathematical models and computational tools for analyzing the rotational dynamics of spacecraft and spaceflight objects. This research is critical for understanding how objects behave in microgravity environments and for designing stable, controllable spacecraft systems.</p>
+            <p>This project focuses on experimentally determining the moments of inertia for spaceflight objects by spinning them around their three different axes. The experimental setup uses a falling mass system to generate known torque, which is applied to rotate the test object. Angular acceleration is measured using specialized instrumentation connected to a PASCO data acquisition system. The spaceflight object is first modeled in CAD software (Fusion 360), then 3D printed and assembled. Custom mounts are designed and printed to connect the object to the angular acceleration measurement system, ensuring precise alignment and minimal interference with the rotational motion.</p>
             
             <div class="project-image">
-                <i class="fas fa-satellite-dish" style="font-size: 4rem; color: #2563eb;"></i>
+                <img src="../assets/WebsiteImages/3-axis-cover.png" alt="3-Axis Moment of Inertia Project" style="width: 100%; max-width: 600px; height: auto; object-fit: cover; border-radius: 10px;">
             </div>
         </div>
 
         <div class="project-section">
             <h2>Research Objectives</h2>
             <ul class="objectives-list">
-                <li>Develop accurate 3-axis moment of inertia calculations for complex spaceflight geometries</li>
-                <li>Create computational models for predicting rotational behavior in microgravity</li>
-                <li>Analyze stability characteristics of different spacecraft configurations</li>
-                <li>Design control algorithms for attitude stabilization using inertia properties</li>
-                <li>Validate theoretical models through simulation and experimental data</li>
-                <li>Investigate the effects of mass distribution on spacecraft maneuverability</li>
+                <li>Design and fabricate a spaceflight object using CAD modeling and 3D printing</li>
+                <li>Create custom mounting systems to interface with angular acceleration measurement equipment</li>
+                <li>Develop experimental procedures for measuring moments of inertia around three orthogonal axes</li>
+                <li>Implement a falling mass torque generation system for known torque application</li>
+                <li>Integrate PASCO instrumentation for precise angular acceleration data collection</li>
+                <li>Analyze experimental data to determine accurate moment of inertia values</li>
+                <li>Compare experimental results with theoretical calculations from CAD models</li>
             </ul>
         </div>
 
         <div class="project-section">
             <h2>Technical Approach</h2>
+            <p>The experimental methodology follows a systematic approach to determine moments of inertia:</p>
+            
+            <h3>CAD Design and Fabrication</h3>
             <ul class="approach-list">
-                <li><strong>Mathematical Modeling:</strong> Developed tensor-based calculations for 3D moment of inertia matrices</li>
-                <li><strong>Computational Analysis:</strong> Implemented numerical methods for complex geometry integration</li>
-                <li><strong>Simulation Development:</strong> Created physics-based simulations for rotational dynamics</li>
-                <li><strong>Control Systems:</strong> Designed feedback control algorithms for attitude management</li>
-                <li><strong>Validation Studies:</strong> Compared theoretical predictions with known spacecraft data</li>
-                <li><strong>Optimization:</strong> Developed methods for optimal mass distribution design</li>
+                <li>Model the spaceflight object in Fusion 360 with precise geometric specifications</li>
+                <li>Design custom mounting brackets and interfaces for angular acceleration sensors</li>
+                <li>3D print all components using appropriate materials for structural integrity</li>
+                <li>Assemble the complete test object with integrated mounting systems</li>
             </ul>
+            
+            <h3>Experimental Setup</h3>
+            <ul class="approach-list">
+                <li>Implement a falling mass system to generate known torque (τ = mgr, where m is mass, g is gravity, r is radius)</li>
+                <li>Connect the test object to angular acceleration measurement instrumentation</li>
+                <li>Interface measurement equipment with PASCO data acquisition system for real-time data collection</li>
+                <li>Ensure proper alignment of rotational axes to minimize measurement errors</li>
+            </ul>
+            
+            <h3>Data Collection and Analysis</h3>
+            <ul class="approach-list">
+                <li>Apply known torque and measure resulting angular acceleration for each axis</li>
+                <li>Use the relationship τ = Iα (where I is moment of inertia, α is angular acceleration) to calculate moments of inertia</li>
+                <li>Collect multiple data points for statistical analysis and error reduction</li>
+                <li>Use Python for data processing, analysis, and visualization of results</li>
+            </ul>
+            
+            <div class="project-image" style="display: flex; gap: 2rem; justify-content: center; align-items: center; flex-wrap: nowrap;">
+                <img src="../assets/WebsiteImages/mounting-config-1.png" alt="Mounting Configuration 1" style="width: 45%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;">
+                <img src="../assets/WebsiteImages/mounting-config-2.png" alt="Mounting Configuration 2" style="width: 45%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;">
+            </div>
         </div>
 
         <div class="project-section">
             <h2>Key Contributions</h2>
             <ul class="contributions-list">
-                <li>Developed comprehensive 3-axis moment of inertia calculation algorithms for irregular spacecraft geometries</li>
-                <li>Created MATLAB/Simulink models for real-time rotational dynamics simulation</li>
-                <li>Implemented advanced numerical integration techniques for complex mass distributions</li>
-                <li>Designed control system architectures for multi-axis attitude stabilization</li>
-                <li>Conducted parametric studies on spacecraft stability and maneuverability</li>
-                <li>Validated theoretical models against historical spacecraft mission data</li>
-                <li>Developed optimization algorithms for spacecraft configuration design</li>
-                <li>Created educational tools for teaching rotational dynamics concepts</li>
+                <li>Designed and modeled the spaceflight object geometry in Fusion 360 CAD software</li>
+                <li>Developed custom mounting systems for angular acceleration sensor integration</li>
+                <li>Fabricated all components using 3D printing technology with appropriate material selection</li>
+                <li>Assembled the complete experimental setup with precise mechanical alignment</li>
+                <li>Implemented the falling mass torque generation system with calibrated mass and radius measurements</li>
+                <li>Integrated PASCO instrumentation for accurate angular acceleration data collection</li>
+                <li>Developed Python-based data analysis algorithms for moment of inertia calculations</li>
+                <li>Performed experimental validation of theoretical moment of inertia calculations</li>
+                <li>Created comprehensive documentation of experimental procedures and results</li>
             </ul>
         </div>
 
         <div class="project-section">
             <h2>Technical Stack</h2>
             <div class="tech-stack">
-                <span class="tech-tag">MATLAB</span>
-                <span class="tech-tag">Simulink</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Numerical Analysis</span>
-                <span class="tech-tag">Linear Algebra</span>
-                <span class="tech-tag">Control Systems</span>
-                <span class="tech-tag">Physics Simulation</span>
-                <span class="tech-tag">Tensor Mathematics</span>
-                <span class="tech-tag">Aerospace Engineering</span>
+                <span class="tech-tag">Fusion 360 (CAD modeling)</span>
+                <span class="tech-tag">3D Printing</span>
+                <span class="tech-tag">PASCO Instrumentation</span>
+                <span class="tech-tag">Angular Acceleration Measurement</span>
+                <span class="tech-tag">Python (Data Analysis)</span>
+                <span class="tech-tag">Experimental Mechanics</span>
                 <span class="tech-tag">Rotational Dynamics</span>
+                <span class="tech-tag">Torque Measurement Systems</span>
             </div>
         </div>
 
         <div class="project-section">
-            <h2>Research Impact</h2>
-            <p>This research contributes to the fundamental understanding of spacecraft rotational dynamics and provides practical tools for aerospace engineers. The developed models and algorithms can be applied to:</p>
+            <h2>Results & Impact</h2>
+            <p>The experimental approach successfully demonstrates the practical application of rotational dynamics principles in aerospace engineering. The project provides valuable insights into:</p>
             <ul>
-                <li><strong>Spacecraft Design:</strong> Optimizing mass distribution for improved stability and control</li>
-                <li><strong>Mission Planning:</strong> Predicting rotational behavior during critical mission phases</li>
-                <li><strong>Control Systems:</strong> Designing more efficient attitude control algorithms</li>
-                <li><strong>Educational Applications:</strong> Teaching advanced rotational dynamics concepts</li>
-                <li><strong>Future Missions:</strong> Supporting next-generation spacecraft development</li>
+                <li><strong>Experimental Validation:</strong> Comparing theoretical moment of inertia calculations with actual measurements</li>
+                <li><strong>CAD Integration:</strong> Bridging the gap between digital design and physical testing</li>
+                <li><strong>Instrumentation:</strong> Effective use of PASCO equipment for precise angular acceleration measurements</li>
+                <li><strong>3D Printing Applications:</strong> Rapid prototyping for aerospace component testing</li>
+                <li><strong>Educational Value:</strong> Hands-on learning of rotational dynamics and experimental methods</li>
+                <li><strong>Future Applications:</strong> Foundation for more complex spacecraft dynamics studies</li>
             </ul>
         </div>
 
@@ -254,11 +277,13 @@
             <h2>Future Work</h2>
             <p>Future research directions include:</p>
             <ul>
-                <li>Integration with real-time spacecraft telemetry data</li>
-                <li>Development of machine learning models for predictive control</li>
-                <li>Extension to flexible body dynamics and structural interactions</li>
-                <li>Collaboration with aerospace industry partners for validation</li>
-                <li>Publication of research findings in peer-reviewed journals</li>
+                <li>Refinement of mounting system designs for improved measurement accuracy</li>
+                <li>Development of automated data collection and analysis procedures</li>
+                <li>Extension to more complex spaceflight object geometries</li>
+                <li>Integration of additional measurement techniques for comprehensive validation</li>
+                <li>Development of educational modules for teaching experimental rotational dynamics</li>
+                <li>Collaboration with aerospace industry for real-world application testing</li>
+                <li>Publication of experimental methodology and results in engineering journals</li>
             </ul>
         </div>
     </div>

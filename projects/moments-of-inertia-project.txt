@@ -8,14 +8,17 @@
 **Status:** [Add status - e.g., Completed, Ongoing, Planning]
 
 ## Description
-Advanced rotational dynamics analysis for aerospace applications, developing comprehensive mathematical models and computational tools for spacecraft stability and control systems.
+Experimental analysis of 3-axis moments of inertia for spaceflight objects using angular acceleration measurements and known torque from a falling mass system. The project involves CAD modeling, 3D printing, assembly, and integration with PASCO instrumentation for precise rotational dynamics measurements.
 
 ## Technologies Used
--Fusion 360
-- Python
-- Control Systems
-- Aerospace Engineering
-- [Add additional technologies as needed - e.g., SolidWorks, CAD modeling, numerical analysis]
+- Fusion 360 (CAD modeling)
+- 3D Printing
+- PASCO Instrumentation
+- Angular Acceleration Measurement
+- Python (Data Analysis)
+- Experimental Mechanics
+- Rotational Dynamics
+- Torque Measurement Systems
 
 ## Project Images
 **Main Image:** ../assets/WebsiteImages/3-axis-cover.png
@@ -27,29 +30,48 @@ Advanced rotational dynamics analysis for aerospace applications, developing com
 ## Detailed Content
 
 ### Overview
-[Add detailed project overview about calculating moments of inertia for spaceflight objects, including the importance for spacecraft stability and control]
+This project focuses on experimentally determining the moments of inertia for spaceflight objects by spinning them around their three different axes. The experimental setup uses a falling mass system to generate known torque, which is applied to rotate the test object. Angular acceleration is measured using specialized instrumentation connected to a PASCO data acquisition system. The spaceflight object is first modeled in CAD software (Fusion 360), then 3D printed and assembled. Custom mounts are designed and printed to connect the object to the angular acceleration measurement system, ensuring precise alignment and minimal interference with the rotational motion.
 
 ### Objectives
-- [Add objective 1 - e.g., Develop accurate 3-axis moment of inertia calculations]
-- [Add objective 2 - e.g., Create computational models for spacecraft dynamics]
-- [Add objective 3 - e.g., Validate models with real spacecraft data]
-- [Add additional objectives as needed]
+- Design and fabricate a spaceflight object using CAD modeling and 3D printing
+- Create custom mounting systems to interface with angular acceleration measurement equipment
+- Develop experimental procedures for measuring moments of inertia around three orthogonal axes
+- Implement a falling mass torque generation system for known torque application
+- Integrate PASCO instrumentation for precise angular acceleration data collection
+- Analyze experimental data to determine accurate moment of inertia values
+- Compare experimental results with theoretical calculations from CAD models
 
 ### Technical Approach
-[Add detailed technical approach including:
-- Mathematical modeling of 3-axis rotational dynamics
-- Computational methods for moment of inertia calculations
-- MATLAB/Simulink implementation for simulation
-- Python scripting for data analysis and visualization
-- Integration with control systems design]
+The experimental methodology follows a systematic approach to determine moments of inertia:
+
+**CAD Design and Fabrication:**
+- Model the spaceflight object in Fusion 360 with precise geometric specifications
+- Design custom mounting brackets and interfaces for angular acceleration sensors
+- 3D print all components using appropriate materials for structural integrity
+- Assemble the complete test object with integrated mounting systems
+
+**Experimental Setup:**
+- Implement a falling mass system to generate known torque (τ = mgr, where m is mass, g is gravity, r is radius)
+- Connect the test object to angular acceleration measurement instrumentation
+- Interface measurement equipment with PASCO data acquisition system for real-time data collection
+- Ensure proper alignment of rotational axes to minimize measurement errors
+
+**Data Collection and Analysis:**
+- Apply known torque and measure resulting angular acceleration for each axis
+- Use the relationship τ = Iα (where I is moment of inertia, α is angular acceleration) to calculate moments of inertia
+- Collect multiple data points for statistical analysis and error reduction
+- Use Python for data processing, analysis, and visualization of results
 
 ### Key Contributions
-- [Add your specific contributions to this project]
-- [Add additional contributions such as:
-  - Mathematical model development
-  - Computational tool creation
-  - Simulation and validation work
-  - Documentation and analysis]
+- Designed and modeled the spaceflight object geometry in Fusion 360 CAD software
+- Developed custom mounting systems for angular acceleration sensor integration
+- Fabricated all components using 3D printing technology with appropriate material selection
+- Assembled the complete experimental setup with precise mechanical alignment
+- Implemented the falling mass torque generation system with calibrated mass and radius measurements
+- Integrated PASCO instrumentation for accurate angular acceleration data collection
+- Developed Python-based data analysis algorithms for moment of inertia calculations
+- Performed experimental validation of theoretical moment of inertia calculations
+- Created comprehensive documentation of experimental procedures and results
 
 ### Results
 [Add project results, findings, and outcomes including:
