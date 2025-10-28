@@ -250,6 +250,12 @@ window.addEventListener('load', () => {
 
 // Parallax effect for hero section
 window.addEventListener('scroll', () => {
+    // Disable parallax on small screens for better performance/layout
+    if (window.innerWidth <= 768) {
+        const heroEl = document.querySelector('.hero');
+        if (heroEl) heroEl.style.transform = '';
+        return;
+    }
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
     if (hero) {

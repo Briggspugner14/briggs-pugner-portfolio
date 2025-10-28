@@ -1261,3 +1261,37 @@ body {
         scroll-behavior: smooth;
     }
 }
+
+/* --- Mobile Overrides (non-destructive) --- */
+/* Ensure hero images scale and don't overflow */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    /* Stack hero poster images vertically and center them */
+    .research-poster {
+        max-width: 100% !important;
+    }
+    .research-poster > div:last-child {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        align-items: center !important;
+    }
+    .research-poster img {
+        max-width: 90% !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Slightly reduce card image height for compact phones */
+    .project-image {
+        height: 100px;
+    }
+    .research-poster > div:last-child {
+        gap: 0.75rem !important;
+    }
+}
