@@ -130,6 +130,51 @@
             color: #2563eb;
             margin-bottom: 0.5rem;
         }
+        /* New: video container */
+        .video-container {
+            max-width: 1000px;
+            margin: 2rem auto 3rem;
+            aspect-ratio: 16 / 9;
+            background: #f3f4f6;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            overflow: hidden;
+        }
+        .video-container video,
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        /* New: image row for side-by-side pictures */
+        .image-row {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, var(--cell-width, 1fr)));
+            grid-auto-rows: var(--cell-height, auto);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        .image-row-top {
+            grid-template-columns: 60% 40%;
+        }
+        .image-row-bottom {
+            grid-template-columns: 30% 70%;
+        }
+        .image-row img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        @media (max-width: 640px) {
+            .image-row {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -145,14 +190,28 @@
     </div>
 
         <div class="project-content">
-            <div class="project-image" style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; max-width: 1200px; margin: 2rem auto;">
-                <img src="../assets/WebsiteImages/launcher_control.jpg" alt="Automated Launcher Control System" style="width: 100%; max-width: 500px; height: auto; object-fit: cover; border-radius: 10px;">
-                <img src="../assets/WebsiteImages/ShippingContainer.jpg" alt="Programming in Shipping Container" style="width: 100%; max-width: 500px; height: auto; object-fit: cover; border-radius: 10px;">
-                <img src="../assets/WebsiteImages/NASA_Award.jpg" alt="NASA Award" style="width: 100%; max-width: 500px; height: auto; object-fit: cover; border-radius: 10px;">
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/8ywNUPh01_k"
+                    title="Automated Launcher Control System - Project Video"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
             </div>
-            
-            <div class="project-image" style="max-width: 1000px; height: 500px;">
-                <img src="../assets/WebsiteImages/LCS_Wiring.png" alt="LCS Wiring System" style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px;">
+            <p style="text-align: center; margin-top: 1rem;">
+                <a href="https://youtu.be/8ywNUPh01_k" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none; font-weight: 500;">
+                    Watch on YouTube
+                </a>
+            </p>
+            <div class="image-row image-row-top">
+                <img src="../assets/WebsiteImages/launcher_control.jpg" alt="Automated Launcher Control System">
+                <img src="../assets/WebsiteImages/ShippingContainer.jpg" alt="Programming in Shipping Container">
+            </div>
+            <div class="image-row image-row-bottom">
+                <img src="../assets/WebsiteImages/NASA_Award.jpg" alt="NASA Award">
+                <img src="../assets/WebsiteImages/LCS_Wiring.png" alt="LCS Wiring System">
             </div>
             
             <div class="project-section">
