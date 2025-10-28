@@ -177,7 +177,9 @@
     <div class="project-container">
         <div class="project-section">
             <h2>Project Overview</h2>
-            <p>Experimental analysis of 3-axis moments of inertia for spaceflight objects using angular acceleration measurements and known torque from a falling mass system. The project involves CAD modeling, 3D printing, assembly, and integration with PASCO instrumentation for precise rotational dynamics measurements.</p>
+            <p>This project focuses on experimentally determining the moments of inertia for spaceflight objects by spinning them around their three different axes. The experimental setup uses a falling mass system to generate known torque, which is applied to rotate the test object. Angular acceleration is measured using specialized instrumentation connected to a PASCO data acquisition system.</p>
+            
+            <p>The spaceflight object is first modeled in CAD software (Fusion 360), then 3D printed and assembled. Custom mounts are designed and printed to connect the object to the angular acceleration measurement system, ensuring precise alignment and minimal interference with the rotational motion.</p>
             
             <div class="project-image">
                 <img src="../assets/WebsiteImages/3-axis-cover.png" alt="3-Axis Moment of Inertia Project" style="width: 100%; max-width: 600px; height: auto; object-fit: cover; border-radius: 10px;">
@@ -198,10 +200,10 @@
         </div>
 
         <div class="project-section">
-            <h2>Technical Approach</h2>
-            <p>The experimental methodology follows a systematic approach to determine moments of inertia:</p>
+            <h2>Methodology</h2>
+            <p>The experimental methodology follows a systematic approach to determine moments of inertia using the fundamental relationship τ = Iα, where τ is torque, I is moment of inertia, and α is angular acceleration.</p>
             
-            <h3>CAD Design and Fabrication</h3>
+            <h3>Phase 1: Design and Fabrication</h3>
             <ul class="approach-list">
                 <li>Model the spaceflight object in Fusion 360 with precise geometric specifications</li>
                 <li>Design custom mounting brackets and interfaces for angular acceleration sensors</li>
@@ -209,7 +211,7 @@
                 <li>Assemble the complete test object with integrated mounting systems</li>
             </ul>
             
-            <h3>Experimental Setup</h3>
+            <h3>Phase 2: Experimental Setup</h3>
             <ul class="approach-list">
                 <li>Implement a falling mass system to generate known torque (τ = mgr, where m is mass, g is gravity, r is radius)</li>
                 <li>Connect the test object to angular acceleration measurement instrumentation</li>
@@ -217,10 +219,10 @@
                 <li>Ensure proper alignment of rotational axes to minimize measurement errors</li>
             </ul>
             
-            <h3>Data Collection and Analysis</h3>
+            <h3>Phase 3: Data Collection and Analysis</h3>
             <ul class="approach-list">
                 <li>Apply known torque and measure resulting angular acceleration for each axis</li>
-                <li>Use the relationship τ = Iα (where I is moment of inertia, α is angular acceleration) to calculate moments of inertia</li>
+                <li>Use the relationship τ = Iα to calculate moments of inertia for each rotational axis</li>
                 <li>Collect multiple data points for statistical analysis and error reduction</li>
                 <li>Use Python for data processing, analysis, and visualization of results</li>
             </ul>
@@ -257,23 +259,28 @@
 
         <div class="project-section">
             <h2>Results & Impact</h2>
-            <p>[Add project results, findings, and outcomes including:</p>
+            <p>This experimental approach successfully demonstrates the practical application of rotational dynamics principles in aerospace engineering. The project provides valuable insights into:</p>
             <ul>
-                <li>Accuracy of moment of inertia calculations</li>
-                <li>Validation results with known spacecraft</li>
-                <li>Computational efficiency improvements</li>
-                <li>Applications to spacecraft design]</li>
+                <li><strong>Experimental Validation:</strong> Comparing theoretical moment of inertia calculations with actual measurements</li>
+                <li><strong>CAD Integration:</strong> Bridging the gap between digital design and physical testing</li>
+                <li><strong>Instrumentation:</strong> Effective use of PASCO equipment for precise angular acceleration measurements</li>
+                <li><strong>3D Printing Applications:</strong> Rapid prototyping for aerospace component testing</li>
+                <li><strong>Educational Value:</strong> Hands-on learning of rotational dynamics and experimental methods</li>
+                <li><strong>Future Applications:</strong> Foundation for more complex spacecraft dynamics studies</li>
             </ul>
         </div>
 
         <div class="project-section">
             <h2>Future Work</h2>
-            <p>[Add future research directions and next steps for:</p>
+            <p>Future research directions include:</p>
             <ul>
-                <li>Model refinement and optimization</li>
-                <li>Integration with spacecraft design tools</li>
-                <li>Extension to more complex geometries</li>
-                <li>Real-time calculation capabilities]</li>
+                <li>Refinement of mounting system designs for improved measurement accuracy</li>
+                <li>Development of automated data collection and analysis procedures</li>
+                <li>Extension to more complex spaceflight object geometries</li>
+                <li>Integration of additional measurement techniques for comprehensive validation</li>
+                <li>Development of educational modules for teaching experimental rotational dynamics</li>
+                <li>Collaboration with aerospace industry for real-world application testing</li>
+                <li>Publication of experimental methodology and results in engineering journals</li>
             </ul>
         </div>
     </div>
