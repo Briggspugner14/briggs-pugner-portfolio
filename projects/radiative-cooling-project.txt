@@ -74,13 +74,6 @@ The Radiative Cooling Project focuses on developing innovative cooling technolog
 ### Results
 This research demonstrates the practical implementation of radiative cooling through direct experimental validation. The thermocouple measurements confirm that samples achieve temperatures below ambient, proving the effectiveness of atmospheric window-tuned radiation. The PID-controlled heating system successfully quantifies the radiative cooling power output, providing concrete data on energy efficiency. This work contributes to climate change mitigation by developing passive cooling technologies that send thermal energy directly to space, reducing reliance on energy-intensive conventional cooling systems and lowering greenhouse gas emissions.
 
-### Future Work
-The project continues to explore advanced materials and system configurations to further improve radiative cooling efficiency and expand potential applications. Future research directions include:
-- Development of scalable manufacturing processes
-- Integration with smart building systems
-- Long-term performance and durability studies
-- Economic analysis and market feasibility studies
-
 ## Additional Information
 **Link to HTML page:** projects/radiative-cooling-project.html
 
